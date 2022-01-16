@@ -199,7 +199,8 @@ section.body {
 
 .categories {
     width: 95%;
-    margin-left: auto;
+    display: flex;
+    margin: auto;
     margin-top: 20px;
 }
 
