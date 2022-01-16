@@ -1,3 +1,5 @@
+/* Initial The Bage */
+
 html {
     direction: rtl;
 }
@@ -6,50 +8,230 @@ body {
     font-family: Tajawal, sans-serif;
     font-size: 14px;
     font-weight: 700;
-    width: 90vw;
     margin: auto;
     display: grid;
-    grid-template-areas: "H H H H" "B B B B" "F F F F";
+    grid-template-areas: "Header" "Body" "Footer";
 }
 
 header {
-    grid-area: H;
+    grid-area: Header;
 }
 
 section.body {
-    grid-area: B;
+    grid-area: Body;
 }
 
 footer {
-    grid-area: F;
+    grid-area: Footer;
 }
 
-nav {
+
+/* Header Styling Section  */
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Style Navbar */
+
+header nav {
     width: 100%;
     background-color: #e5e9f2;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-ul li {
+header nav ul {
+    margin: 0;
+}
+
+header nav ul li {
     list-style-type: none;
     display: inline;
-    margin-left: 30px;
     cursor: pointer;
+    border-left: 2px solid #ccc;
+    padding: 0 20px;
     transition: 1s;
 }
 
-ul li:hover {
+header nav ul li:hover {
     color: darkred;
     font-size: 1.1em;
 }
 
+
+/* Style search_logo  div */
+
+.search_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search_logo .searchBox {
+    width: 75%;
+    position: relative;
+    height: 40px;
+}
+
+.searchBox input[type=text] {
+    width: 100%;
+    border-radius: 20px;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    font-family: Tajawal, sans-serif;
+    font-size: 14px;
+    padding: 5px;
+    background-color: #e5e9f2;
+}
+
+.searchBox input[type=submit] {
+    background-image: url("../images/search.png");
+    background-color: #e5e9f2;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 20px;
+    background-color: transparent;
+    border: 0;
+}
+
+.bag {
+    background-color: #ccc;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+/* Body Styling Section  */
+
 section.body {
     background-color: azure;
-    height: 200px;
+    margin: 20px 0;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
 }
+
+.body .carosal {
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+
+.content img {
+    width: 100%;
+}
+
+.carosal .controls {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    background-color: rgba(228, 222, 222, 0.5);
+}
+
+.controls ul li {
+    list-style-type: circle;
+    float: left;
+    margin-left: 40px;
+    font-size: 32px;
+}
+
+.carosal .leftBtn {
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    color: #ffffff5c;
+    font-size: 40px;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: .8s;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.carosal .rightBtn {
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    color: #ffffff5c;
+    font-size: 40px;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: .8s;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.carosal .leftBtn:hover,
+.carosal .rightBtn:hover {
+    border-radius: 30% 0 0 30%;
+    color: white;
+    background-color: rgb(3 3 3 / 23%);
+}
+
+.carosal .leftBtn:hover {
+    border-radius: 0 30% 30% 0;
+}
+
+
+/* Categories Section */
+
+.categories {
+    width: 95%;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.simpleCard {
+    width: 100px;
+    height: 100px;
+    background-color: #FFF;
+    box-shadow: 0 0 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.simpleCard img {
+    border-radius: 50%;
+}
+
+.simpleCard h2 {
+    color: darkred;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+
+/* Footer Styling Section  */
 
 footer {
     background-color: #000000;
