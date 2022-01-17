@@ -114,9 +114,7 @@ header nav ul li:hover {
 /* Body Styling Section  */
 
 section.body {
-    background-color: azure;
     margin: 20px 0;
-    height: 500px;
     display: flex;
     flex-direction: column;
 }
@@ -199,19 +197,23 @@ section.body {
 
 .categories {
     width: 95%;
-    display: flex;
     margin: auto;
     margin-top: 20px;
+}
+
+.categories>h1 {
+    color: darkred;
 }
 
 .container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .simpleCard {
     width: 100px;
-    height: 100px;
     background-color: #FFF;
     box-shadow: 0 0 10px;
     text-align: center;
@@ -232,9 +234,136 @@ section.body {
 }
 
 
+/*  Adds Section  */
+
+.adds {
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.adds>div {
+    height: 200px;
+    background-color: #ccc;
+}
+
+
+/* Presentations Section  */
+
+.presentations {
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.presentations>h1 {
+    color: darkred;
+}
+
+.card {
+    background-color: #FFF;
+    box-shadow: 0 0 5px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.card .header {}
+
+.card .body h2 {
+    color: red;
+}
+
+.card .body h2 sub {
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+.card .footer {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.card .footer .origin {
+    background-color: red;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+
 /* Footer Styling Section  */
 
 footer {
-    background-color: #000000;
+    background-color: #e5e9f2;
     height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .first {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+footer form {
+    padding: 10px;
+    background-color: #555;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+footer form input {
+    font: inherit;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+}
+
+footer .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .contact .contactLinks {
+    margin-top: 40px;
+}
+
+footer ul {
+    padding-inline-start: 0;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+
+footer .second {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+footer h1 {
+    font-size: 20px;
+}
+
+footer .second img {
+    width: 70px;
 }
