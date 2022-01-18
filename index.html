@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/account-style.css">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         <nav>
             <div class="links">
                 <ul>
-                    <li>ادخل حسابك أو سجل الأن</li>
+                    <li onclick="showModule('sign-in');">ادخل حسابك أو سجل الأن</li>
                     <li>الرئيسية</li>
                     <li>من نحن </li>
                     <li>أتصل بنا </li>
@@ -778,6 +779,29 @@
         </section>
     </section>
     <!-- End Body Section  -->
+
+    <!-- Start Login Pop Up -->
+    <div class="sign-in">
+        <span onclick="hideModule('sign-in');" class="close" title="Close Modal">×</span>
+        <form action="">
+            <h1>تسجيــــل الدخـــول</h1>
+            <hr>
+            <input class="" type="text" onkeyup="validateName(this);" id="fullName" name="fullName" placeholder="البريد الإلكتروني أو رقم الجوال">
+
+            <div class="passDiv">
+                <a href="#">نسيت ؟</a>
+                <input class="input" type="password" onkeyup="validatePassword(this);" id="password" name="password" placeholder="كلمة السر">
+            </div>
+            <input class="input" id="submit" type="submit" value="تسجيل الدخـــول">
+
+            <div id="CreateAccountBox">
+                <label for="createAccountBtn">ليس لديك حساب ؟</label>
+                <a id="createAccountBtn" href="#">إنشاء حساب جديد</a>
+            </div>
+
+        </form>
+    </div>
+    <!-- Finish Login Pop Up -->
 
     <!-- Start Footer  -->
     <footer>
