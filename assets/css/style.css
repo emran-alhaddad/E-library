@@ -4,11 +4,36 @@ html {
     direction: rtl;
 }
 
+* {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent;
+    /* thumb and track color */
+    scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+}
+
+* {
+    -ms-overflow-style: none;
+}
+
 body {
+    margin: 0 auto;
+    padding: 0 1.25rem;
     font-family: Tajawal, sans-serif;
     font-size: 14px;
     font-weight: 700;
-    margin: auto;
     display: grid;
     grid-template-areas: "Header" "Body" "Footer";
 }
@@ -97,8 +122,8 @@ header nav ul li:hover {
     background-size: cover;
     background-position: center;
     position: absolute;
-    left: 0;
-    top: 7px;
+    left: 1vw;
+    top: 1vh;
     width: 20px;
     background-color: transparent;
     border: 0;
@@ -119,7 +144,8 @@ section.body {
     flex-direction: column;
 }
 
-.body .carosal {
+
+/* .body .carosal {
     width: 95%;
     margin: auto;
     position: relative;
@@ -190,7 +216,7 @@ section.body {
 
 .carosal .leftBtn:hover {
     border-radius: 0 30% 30% 0;
-}
+} */
 
 
 /* ####################################################### */
@@ -238,36 +264,6 @@ section.body {
     100% {
         scroll-snap-align: center;
     }
-}
-
-body {
-    margin: 0 auto;
-    padding: 0 1.25rem;
-    font-family: 'Lato', sans-serif;
-}
-
-* {
-    box-sizing: border-box;
-    scrollbar-color: transparent transparent;
-    /* thumb and track color */
-    scrollbar-width: 0px;
-}
-
-*::-webkit-scrollbar {
-    width: 0;
-}
-
-*::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-    background: transparent;
-    border: none;
-}
-
-* {
-    -ms-overflow-style: none;
 }
 
 ol,
