@@ -16,27 +16,22 @@
     <script src="assets/js/app.js"></script>
 </head>
 
-<body>
+<body onload="LastOffers()">
 
     <!-- Start Header -->
     <header>
         <nav>
-            <div class="links">
-                <ul>
-                    <li onclick="showModule('sign-in');">ادخل حسابك أو سجل الأن</li>
-                    <li>الرئيسية</li>
-                    <li>من نحن </li>
-                    <li>أتصل بنا </li>
-                    <li>المساعدة</li>
-                    <li>سياسة الخصوصية</li>
-                    <li>اليمن YER</li>
+            <ul>
+                <li onclick="showModule('sign-in');"> <img src="assets/icons/svgexport-1.svg" alt=""> ادخل حسابك أو سجل الأن </li>
+                <li><img src="assets/icons/svgexport-54.svg" alt="">الرئيسية</li>
+                <li><img src="assets/icons/svgexport-3.svg" alt="">من نحن </li>
+                <li><img src="assets/icons/svgexport-4.svg" alt="">أتصل بنا </li>
+                <li><img src="assets/icons/svgexport-5.svg" alt="">المساعدة</li>
+                <li><img src="assets/icons/svgexport-11.svg" alt="">سياسة الخصوصية</li>
+                <li><img src="assets/icons/svgexport-12.svg" alt="">اليمن YER</li>
+                <li><img src="assets/icons/svgexport-14.svg" alt=""> English</li>
+            </ul>
 
-                </ul>
-            </div>
-
-            <div>
-                <input type="button" value="English">
-            </div>
         </nav>
         <section class="search_logo">
             <div class="logo">
@@ -58,39 +53,6 @@
 
     <!-- Start Body Section -->
     <section class="body">
-
-        <!-- Start Carosal  -->
-        <!-- <div class="carosal">
-            <div class="content">
-                
-                <div class="controls">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="leftBtn">
-                    <h1>
-                        &gt;
-                    </h1>
-                </div>
-                <div class="rightBtn">
-                    <h1>
-                        &lt;
-                    </h1>
-                </div>
-            </div>
-        </div> -->
 
         <section class="carousel" aria-label="Gallery">
             <ol class="carousel__viewport">
@@ -193,7 +155,11 @@
         <!-- End Categories Section  -->
 
         <section class="adds">
-            <div></div>
+
+            <div>
+                <h1>تخفيض اخر العروض</h1>
+                <h2 id="lastOffers"></h2>
+            </div>
         </section>
 
         <section class="presentations">
@@ -209,9 +175,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -225,9 +191,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -241,9 +207,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -257,9 +223,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -273,9 +239,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
             </div>
@@ -292,9 +258,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -308,9 +274,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -324,9 +290,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -340,9 +306,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -356,9 +322,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
             </div>
@@ -375,9 +341,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -391,9 +357,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -407,9 +373,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -423,9 +389,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -439,9 +405,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
             </div>
@@ -458,9 +424,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -474,9 +440,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -490,9 +456,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -506,9 +472,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -522,9 +488,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
             </div>
@@ -541,9 +507,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -557,9 +523,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -573,9 +539,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -589,9 +555,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -605,9 +571,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
             </div>
@@ -624,9 +590,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -640,9 +606,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -656,9 +622,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -672,9 +638,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -688,9 +654,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
             </div>
@@ -707,9 +673,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -723,9 +689,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -739,9 +705,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -755,9 +721,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
 
@@ -771,9 +737,9 @@
                         <h2>17.9 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
-                        <img src="assets/images/transfere.png" alt="transfere" srcset="">
-                        <img class="origin" src="assets/images/shopbag.png" alt="shopbag" srcset="">
-                        <img src="assets/images/star.png" alt="star" srcset="">
+                        <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
+                        <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
+                        <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
             </div>
@@ -798,12 +764,14 @@
                 <div class="contactLinks">
                     <h1>تواصل معنا</h1>
                     <div>
-                        <img src="assets/images/facebook.png" alt="">
-                        <img src="assets/images/twitter.png" alt="">
-                        <img src="assets/images/youtube.png" alt="">
-                        <img src="assets/images/instagram.png" alt="">
-                        <img src="assets/images/linkedin.png" alt="">
-                        <img src="assets/images/snapchat.png" alt="">
+                        <img src="assets/icons/svgexport-58.svg" alt="">
+                        <img src="assets/icons/svgexport-59.svg" alt="">
+                        <img src="assets/icons/svgexport-60.svg" alt="">
+                        <img src="assets/icons/svgexport-61.svg" alt="">
+                        <img src="assets/icons/svgexport-62.svg" alt="">
+                        <img src="assets/icons/svgexport-63.svg" alt="">
+                        <img src="assets/icons/svgexport-64.svg" alt="">
+
                     </div>
                 </div>
 
@@ -811,6 +779,7 @@
             </div>
             <div>
                 <h1>خدمة العملاء</h1>
+                <hr>
                 <ul>
                     <li><a href="#">مبيغات الشركة</a></li>
                     <li><a href="#">الأسئلة المتكررة</a></li>
@@ -824,6 +793,7 @@
             </div>
             <div>
                 <h1>خدمات جرير</h1>
+                <hr>
                 <ul>
                     <li><a href="#">مبيغات الشركة</a></li>
                     <li><a href="#">الأسئلة المتكررة</a></li>
@@ -838,6 +808,7 @@
 
             <div>
                 <h1>روابط سريعة</h1>
+                <hr>
                 <ul>
                     <li><a href="#">مبيغات الشركة</a></li>
                     <li><a href="#">الأسئلة المتكررة</a></li>
@@ -852,6 +823,7 @@
 
             <div>
                 <h1>عن جرير</h1>
+                <hr>
                 <ul>
                     <li><a href="#">مبيغات الشركة</a></li>
                     <li><a href="#">الأسئلة المتكررة</a></li>
@@ -874,10 +846,13 @@
                 </p>
             </div>
             <div style="order: 1;">
-                <img src="assets/images/paypal.png" alt="">
-                <img src="assets/images/master.png" alt="">
-                <img src="assets/images/visa.png" alt="">
-                <img src="assets/images/card 4.png" alt="">
+                <img src="assets/icons/svgexport-65.svg" alt="">
+                <img src="assets/icons/svgexport-66.svg" alt="">
+                <img src="assets/icons/svgexport-67.svg" alt="">
+                <img src="assets/icons/svgexport-68.svg" alt="">
+                <img src="assets/icons/svgexport-69.svg" alt="">
+                <img src="assets/icons/svgexport-70.svg" alt="">
+
             </div>
         </div>
 

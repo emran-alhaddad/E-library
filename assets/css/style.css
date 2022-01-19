@@ -30,7 +30,7 @@ html {
 
 body {
     margin: 0 auto;
-    padding: 0 1.25rem;
+    padding: 0 1rem;
     font-family: Tajawal, sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -64,14 +64,15 @@ header {
 header nav {
     width: 100%;
     background-color: #e5e9f2;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
 }
 
 header nav ul {
     margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 header nav ul li {
@@ -79,13 +80,16 @@ header nav ul li {
     display: inline;
     cursor: pointer;
     border-left: 2px solid #ccc;
-    padding: 0 20px;
+    padding: 10px 20px;
     transition: 1s;
+}
+
+header nav ul li img {
+    height: 16px;
 }
 
 header nav ul li:hover {
     color: darkred;
-    font-size: 1.1em;
 }
 
 
@@ -96,6 +100,7 @@ header nav ul li:hover {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .search_logo .searchBox {
@@ -444,6 +449,7 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 50px;
 }
 
@@ -479,7 +485,11 @@ li {
 
 .adds>div {
     height: 200px;
-    background-color: #ccc;
+    background-color: rgb(164 183 185 / 21%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
@@ -505,6 +515,10 @@ li {
     position: relative;
 }
 
+.card:hover {
+    border: 1px solid red;
+}
+
 .card .header {}
 
 .card .body h2 {
@@ -522,6 +536,10 @@ li {
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
+}
+
+.card .footer img {
+    width: 30px;
 }
 
 .card .footer .origin {
@@ -547,6 +565,7 @@ footer .first {
     justify-content: space-between;
     background-color: black;
     color: white;
+    flex-wrap: wrap;
 }
 
 footer form {
@@ -572,6 +591,10 @@ footer .contact {
 
 footer .contact .contactLinks {
     margin-top: 40px;
+}
+
+footer .contact .contactLinks img {
+    width: 40px;
 }
 
 footer ul {
