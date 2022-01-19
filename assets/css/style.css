@@ -513,6 +513,7 @@ li {
     margin: 10px;
     border-radius: 5px;
     position: relative;
+    width: 260px;
 }
 
 .card:hover {
@@ -523,6 +524,11 @@ li {
 
 .card .body h2 {
     color: red;
+}
+
+.card .body h5 {
+    color: #2c8989;
+    font: inherit;
 }
 
 .card .body h2 sub {
