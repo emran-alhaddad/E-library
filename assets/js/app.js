@@ -27,5 +27,5 @@ const allCounters = () => {
     LastOffers("Jan 19, 2022 23:47:55", "lastOffers3");
     LastOffers("Jan 20, 2022 00:00:00", "lastOffers4");
     LastOffers("Jan 25, 2022 08:20:00", "lastOffers5");
-    LastOffers("Jan 30, 2022 12:12:12", "lastOffers6");
+
 }

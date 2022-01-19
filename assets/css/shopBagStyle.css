@@ -1,0 +1,127 @@
+.body {
+    height: 500px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#bagTitle {
+    display: flex;
+    flex-direction: row;
+    font: inherit;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#bagTitle img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+#bagTitle h1 sub {
+    color: #ccc;
+}
+
+.bagBody {
+    display: flex;
+    flex-direction: row;
+    background-color: #abcdef;
+    height: 300px;
+}
+
+.bagBody .right {
+    flex-grow: 2;
+    background-color: #fedcba;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bagBody .left {
+    flex-grow: 1;
+    background-color: #ccaabb;
+    height: 100%;
+}
+
+.bagBody .right .shoppingItem {
+    width: 96%;
+    height: 300px;
+    padding: 2%;
+    margin: 2%;
+    box-shadow: 0 0 2px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.bagBody .right .shoppingItem .itemBody {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+}
+
+.bagBody .right .shoppingItem .itemFooter {
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    margin-top: 1%;
+}
+
+.bagBody .right .shoppingItem .icon {
+    height: 40%;
+}
+
+.bagBody .right .shoppingItem .content {
+    width: 75%;
+    height: 100%;
+}
+
+.shoppingItem .content h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.shoppingItem .content p {
+    margin: 0;
+    padding: 2px 10px;
+    font-style: italic;
+    font-size: smaller;
+    color: #ccc;
+}
+
+.bagBody .right .shoppingItem .price {
+    background-color: #1100ff;
+    width: 20%;
+    height: 100%;
+}
+
+.itemBody .note {
+    background-color: #fef9eb;
+    border-inline-start: 5px solid #f8d21e;
+    padding: 10px;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.itemBody .note p {
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.itemBody .note a {
+    color: #2886e9;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    padding: 2px 10px;
+}
+
+.itemFooter li {
+    list-style-type: initial;
+}
+
+.itemFooter ul {
+    padding-right: 11px;
+}

@@ -26,12 +26,12 @@ html {
 
 * {
     -ms-overflow-style: none;
+    font-family: Tajawal, sans-serif;
 }
 
 body {
     margin: 0 auto;
     padding: 0 1rem;
-    font-family: Tajawal, sans-serif;
     font-size: 14px;
     font-weight: 700;
     display: grid;
