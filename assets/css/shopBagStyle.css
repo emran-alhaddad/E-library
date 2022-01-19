@@ -1,6 +1,5 @@
-.body {
-    height: 500px;
-    margin: 20px 0;
+section.body {
+    margin: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,29 +26,91 @@
 .bagBody {
     display: flex;
     flex-direction: row;
-    background-color: #abcdef;
-    height: 300px;
+    flex-wrap: wrap;
 }
 
 .bagBody .right {
-    flex-grow: 2;
-    background-color: #fedcba;
-    height: 100%;
+    flex-grow: 3;
     display: flex;
     flex-direction: column;
 }
 
 .bagBody .left {
     flex-grow: 1;
-    background-color: #ccaabb;
+    padding: 2%;
+    margin: 0 0 2% 2%;
+    box-shadow: 0 0 2px;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 260px;
+}
+
+.bagBody .left .priceDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
 }
 
+.left .priceDetails .top {
+    display: flex;
+    flex-direction: column;
+}
+
+.priceDetails .top .lineDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top .lineDetails sub {
+    color: #ccc;
+    font-size: 12px;
+}
+
+.top .lineDetails h3,
+.top .lineDetails h2,
+.top .lineDetails h1 {
+    margin: 0;
+}
+
+.top .lineDetails .green {
+    color: green;
+}
+
+.top .lineDetails .red {
+    color: red;
+}
+
+.left .priceDetails .bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.priceDetails .bottom p {
+    padding: 10px 2px;
+    color: #aaa;
+    font-size: 12px;
+}
+
+.priceDetails .bottom a {
+    text-decoration: none;
+    color: #2886e9;
+    font-size: 12px;
+}
+
+.priceDetails .bottom input[type=submit] {
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+}
+
 .bagBody .right .shoppingItem {
-    width: 96%;
-    height: 300px;
     padding: 2%;
-    margin: 2%;
+    margin: 0 0 2% 2%;
     box-shadow: 0 0 2px;
     border-radius: 5px;
     background-color: #fff;
@@ -58,22 +119,21 @@
 .bagBody .right .shoppingItem .itemBody {
     display: flex;
     flex-direction: row;
-    height: 70%;
+    height: 80%;
 }
 
 .bagBody .right .shoppingItem .itemFooter {
     display: flex;
     flex-direction: row;
-    height: 20%;
     margin-top: 1%;
 }
 
 .bagBody .right .shoppingItem .icon {
-    height: 40%;
+    height: 35px;
 }
 
 .bagBody .right .shoppingItem .content {
-    width: 75%;
+    width: 80%;
     height: 100%;
 }
 
@@ -91,9 +151,28 @@
 }
 
 .bagBody .right .shoppingItem .price {
-    background-color: #1100ff;
     width: 20%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.right .shoppingItem .price select {
+    width: 56px;
+    height: 40px;
+    padding: 0 16px;
+    background-position-x: 15%;
+}
+
+.right .shoppingItem .price h1 {
+    color: red;
+    margin-top: 0;
+}
+
+.right .shoppingItem .price h1 sub {
+    color: rgba(255, 0, 0, 0.384);
+    font-size: 12px;
 }
 
 .itemBody .note {
@@ -123,5 +202,6 @@
 }
 
 .itemFooter ul {
-    padding-right: 11px;
+    padding-right: 20px;
+    margin: 0;
 }
