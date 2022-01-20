@@ -6,17 +6,6 @@ html {
 
 * {
     box-sizing: border-box;
-    scrollbar-color: transparent transparent;
-    /* thumb and track color */
-    scrollbar-width: 0px;
-}
-
-*::-webkit-scrollbar {
-    width: 0;
-}
-
-*::-webkit-scrollbar-track {
-    background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -31,7 +20,7 @@ html {
 
 body {
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0;
     font-size: 14px;
     font-weight: 700;
     display: grid;
@@ -44,6 +33,7 @@ header {
 
 section.body {
     grid-area: Body;
+    padding: 0 1rem;
 }
 
 footer {
@@ -80,8 +70,9 @@ header nav ul li {
     display: inline;
     cursor: pointer;
     border-left: 2px solid #ccc;
-    padding: 10px 20px;
+    padding: 10px;
     transition: 1s;
+    flex: 1;
 }
 
 header nav ul li img {
@@ -101,6 +92,7 @@ header nav ul li:hover {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .search_logo .searchBox {
@@ -112,32 +104,43 @@ header nav ul li:hover {
 .searchBox input[type=text] {
     width: 100%;
     border-radius: 20px;
-    background-color: transparent;
     position: absolute;
     right: 0;
     font-family: Tajawal, sans-serif;
     font-size: 14px;
     padding: 5px;
+    height: 100%;
     background-color: #e5e9f2;
 }
 
 .searchBox input[type=submit] {
-    background-image: url("../images/search.png");
-    background-color: #e5e9f2;
+    background-image: url("../icons/search.svg");
     background-size: cover;
     background-position: center;
     position: absolute;
     left: 1vw;
     top: 1vh;
-    width: 20px;
+    width: 30px;
+    height: 30px;
     background-color: transparent;
     border: 0;
 }
 
 .bag {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+.bag a {
+    display: inline-block;
     background-color: #ccc;
+    padding: 9px;
     border-radius: 50%;
-    padding: 10px;
+}
+
+.bag a img {
+    height: 20px;
 }
 
 
@@ -454,13 +457,13 @@ li {
 }
 
 .simpleCard {
-    width: 100px;
     background-color: #FFF;
     box-shadow: 0 0 10px;
     text-align: center;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
+    flex: 1;
 }
 
 .simpleCard img {
@@ -478,14 +481,10 @@ li {
 /*  Adds Section  */
 
 .adds {
-    width: 95%;
-    margin: auto;
     margin-top: 20px;
 }
 
 .adds>div {
-    height: 200px;
-    background-color: rgb(164 183 185 / 21%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -509,18 +508,30 @@ li {
     background-color: #FFF;
     box-shadow: 0 0 5px;
     text-align: center;
-    padding: 10px;
+    padding: 0 20px 10px 20px;
     margin: 10px;
     border-radius: 5px;
     position: relative;
-    width: 260px;
+    flex: 1;
 }
 
 .card:hover {
-    border: 1px solid red;
+    outline: 1px solid red;
 }
 
 .card .header {}
+
+.card .body h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .body h1 img {
+    margin-left: 5px;
+    width: 30px;
+    height: 40px;
+}
 
 .card .body h2 {
     color: red;
@@ -574,6 +585,11 @@ footer .first {
     flex-wrap: wrap;
 }
 
+footer .first>div {
+    flex: 2;
+    margin-left: 10px;
+}
+
 footer form {
     padding: 10px;
     background-color: #555;
@@ -587,12 +603,18 @@ footer form input {
     border-radius: 5px;
     padding: 5px;
     margin: 2px;
+    width: -webkit-fill-available;
+}
+
+footer form input[type=submit] {
+    width: auto;
 }
 
 footer .contact {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: auto 10px;
+    flex: 3;
 }
 
 footer .contact .contactLinks {
@@ -630,4 +652,10 @@ footer h1 {
 
 footer .second img {
     width: 70px;
+}
+
+@media (max-width:700px) {
+    nav {
+        display: none;
+    }
 }

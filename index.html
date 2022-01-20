@@ -33,30 +33,32 @@
             </ul>
 
         </nav>
-        <section class="search_logo">
-            <div class="logo">
-                <img src="assets/images/logo.png" alt="Logo" srcset="">
-            </div>
-            <form action="" class="searchBox">
-                <input type="text" name="seach" id="search">
-                <input type="submit" value="">
-            </form>
-            <div class="bag">
-                <div>
-                    <span></span>
-                    <a href="shopBag.html">
-                        <img src="assets/images/bag.png" alt="">
-                    </a>
-                </div>
-            </div>
-        </section>
+
     </header>
     <!-- End Header -->
 
     <!-- Start Body Section -->
     <section class="body">
 
-        <section class="carousel" aria-label="Gallery">
+        <section class="search_logo">
+            <div class="logo">
+                <img src="assets/icons/svgexport-48.svg" alt="Logo" srcset="">
+            </div>
+            <form action="" class="searchBox">
+                <input type="text" name="seach" id="search" onkeyup="search_books();">
+                <input type="submit" value="">
+            </form>
+            <div class="bag">
+                <div>
+                    <span></span>
+                    <a href="shopBag.html">
+                        <img src="assets/icons/svgexport-51.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Start Carosal  -->
+        <section class="carousel hide" aria-label="Gallery">
             <ol class="carousel__viewport">
                 <li id="carousel__slide1" tabindex="0" class="carousel__slide">
                     <div class="carousel__snapper">
@@ -108,58 +110,52 @@
         <!-- End Carosal  -->
 
         <!-- Categories Sction -->
-        <section class=" categories">
+        <section class=" categories hide">
             <h1> تصفح حسب القسم</h1>
             <div class="container">
                 <div class="simpleCard">
-                    <img src="assets/images/computer.png" alt="" srcset="">
+                    <img src="assets/icons/svgexport-45.svg" alt="" srcset="">
                     <h2>دين</h2>
                 </div>
 
                 <div class="simpleCard">
-                    <img src="assets/images/computer.png" alt="" srcset="">
-                    <h2>دين</h2>
+                    <img src="assets/icons/svgexport-41.svg" alt="" srcset="">
+                    <h2>تاريخ</h2>
                 </div>
 
                 <div class="simpleCard">
-                    <img src="assets/images/computer.png" alt="" srcset="">
-                    <h2>دين</h2>
+                    <img src="assets/icons/svgexport-39.svg" alt="" srcset="">
+                    <h2>روايات</h2>
                 </div>
 
                 <div class="simpleCard">
-                    <img src="assets/images/computer.png" alt="" srcset="">
-                    <h2>دين</h2>
+                    <img src="assets/icons/svgexport-42.svg" alt="" srcset="">
+                    <h2>سياسة</h2>
                 </div>
 
                 <div class="simpleCard">
-                    <img src="assets/images/computer.png" alt="" srcset="">
-                    <h2>دين</h2>
+                    <img src="assets/icons/svgexport-44.svg" alt="" srcset="">
+                    <h2>اقتصاد</h2>
                 </div>
 
                 <div class="simpleCard">
-                    <img src="assets/images/computer.png" alt="" srcset="">
-                    <h2>دين</h2>
+                    <img src="assets/icons/svgexport-46.svg" alt="" srcset="">
+                    <h2>طبخ</h2>
                 </div>
 
                 <div class="simpleCard">
-                    <img src="assets/images/computer.png" alt="" srcset="">
-                    <h2>دين</h2>
+                    <img src="assets/icons/svgexport-47.svg" alt="" srcset="">
+                    <h2>تربية</h2>
                 </div>
-
-                <div class="simpleCard">
-                    <img src="assets/images/computer.png" alt="" srcset="">
-                    <h2>دين</h2>
-                </div>
-
             </div>
         </section>
 
         <!-- End Categories Section  -->
 
-        <section class="adds">
+        <section class="adds hide">
 
             <div>
-
+                <img src="assets/images/Adds.jpg" width="100%" alt="">
             </div>
         </section>
 
@@ -168,12 +164,12 @@
             <div class="container">
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book1.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">كبرياء وهوى (كتاب إلكتروني)</p>
+                        <h2>17.99 <sub>رس</sub></h2>
                         <h5 id="lastOffers1"></h5>
                     </div>
                     <div class="footer">
@@ -185,12 +181,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book2.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">خلف قوتي ضعف يحبك (كتاب إلكتروني)</p>
+                        <h2>24.99 <sub>رس</sub></h2>
                         <h5 id="lastOffers2"></h5>
                     </div>
                     <div class="footer">
@@ -202,12 +198,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book3.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">كتالوج الحب (كتاب إلكتروني)</p>
+                        <h2>19.99 <sub>رس</sub></h2>
                         <h5 id="lastOffers3"></h5>
                     </div>
                     <div class="footer">
@@ -219,12 +215,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book4.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">إلى الذي أسرني حبه (كتاب إلكتروني)</p>
+                        <h2>19.99 <sub>رس</sub></h2>
                         <h5 id="lastOffers4"></h5>
                     </div>
                     <div class="footer">
@@ -236,12 +232,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book5.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt=""> كتاب إلكتروني</h1>
+                        <p class="BoookTitle">زواج غير متوقع (كتاب إلكتروني)</p>
+                        <h2>3.99 <sub>رس</sub></h2>
                         <h5 id="lastOffers5"></h5>
                     </div>
                     <div class="footer">
@@ -250,18 +246,19 @@
                         <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
+
             </div>
 
             <h1> الكتب الدينية</h1>
             <div class="container">
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book1.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">كبرياء وهوى (كتاب إلكتروني)</p>
+                        <h2>17.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -272,12 +269,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book2.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">خلف قوتي ضعف يحبك (كتاب إلكتروني)</p>
+                        <h2>24.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -288,12 +285,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book3.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">كتالوج الحب (كتاب إلكتروني)</p>
+                        <h2>19.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -304,12 +301,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book4.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">إلى الذي أسرني حبه (كتاب إلكتروني)</p>
+                        <h2>19.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -320,12 +317,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book5.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt=""> كتاب إلكتروني</h1>
+                        <p class="BoookTitle">زواج غير متوقع (كتاب إلكتروني)</p>
+                        <h2>3.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -333,18 +330,19 @@
                         <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
+
             </div>
 
             <h1> الكتب التاريخية</h1>
             <div class="container">
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book1.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">كبرياء وهوى (كتاب إلكتروني)</p>
+                        <h2>17.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -355,12 +353,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book2.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">خلف قوتي ضعف يحبك (كتاب إلكتروني)</p>
+                        <h2>24.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -371,12 +369,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book3.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">كتالوج الحب (كتاب إلكتروني)</p>
+                        <h2>19.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -387,12 +385,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book4.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">إلى الذي أسرني حبه (كتاب إلكتروني)</p>
+                        <h2>19.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -403,12 +401,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book5.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt=""> كتاب إلكتروني</h1>
+                        <p class="BoookTitle">زواج غير متوقع (كتاب إلكتروني)</p>
+                        <h2>3.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -416,18 +414,19 @@
                         <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
+
             </div>
 
             <h1> السايسة</h1>
             <div class="container">
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book1.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">كبرياء وهوى (كتاب إلكتروني)</p>
+                        <h2>17.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -438,12 +437,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book2.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">خلف قوتي ضعف يحبك (كتاب إلكتروني)</p>
+                        <h2>24.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -454,12 +453,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book3.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">كتالوج الحب (كتاب إلكتروني)</p>
+                        <h2>19.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -470,12 +469,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book4.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">إلى الذي أسرني حبه (كتاب إلكتروني)</p>
+                        <h2>19.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -486,12 +485,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book5.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt=""> كتاب إلكتروني</h1>
+                        <p class="BoookTitle">زواج غير متوقع (كتاب إلكتروني)</p>
+                        <h2>3.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -499,18 +498,19 @@
                         <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
+
             </div>
 
             <h1> الأقتصاد</h1>
             <div class="container">
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book1.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">كبرياء وهوى (كتاب إلكتروني)</p>
+                        <h2>17.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -521,12 +521,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book2.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">خلف قوتي ضعف يحبك (كتاب إلكتروني)</p>
+                        <h2>24.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -537,12 +537,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book3.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">كتالوج الحب (كتاب إلكتروني)</p>
+                        <h2>19.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -553,12 +553,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book4.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">إلى الذي أسرني حبه (كتاب إلكتروني)</p>
+                        <h2>19.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -569,12 +569,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book5.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt=""> كتاب إلكتروني</h1>
+                        <p class="BoookTitle">زواج غير متوقع (كتاب إلكتروني)</p>
+                        <h2>3.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -582,18 +582,19 @@
                         <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
+
             </div>
 
             <h1> الطبخ</h1>
             <div class="container">
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book1.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">كبرياء وهوى (كتاب إلكتروني)</p>
+                        <h2>17.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -604,12 +605,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book2.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">خلف قوتي ضعف يحبك (كتاب إلكتروني)</p>
+                        <h2>24.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -620,12 +621,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book3.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">كتالوج الحب (كتاب إلكتروني)</p>
+                        <h2>19.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -636,12 +637,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book4.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">إلى الذي أسرني حبه (كتاب إلكتروني)</p>
+                        <h2>19.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -652,12 +653,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book5.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt=""> كتاب إلكتروني</h1>
+                        <p class="BoookTitle">زواج غير متوقع (كتاب إلكتروني)</p>
+                        <h2>3.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -665,18 +666,19 @@
                         <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
+
             </div>
 
             <h1> أفضل الروايات الرومانسية</h1>
             <div class="container">
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book1.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">كبرياء وهوى (كتاب إلكتروني)</p>
+                        <h2>17.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -687,12 +689,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book2.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">خلف قوتي ضعف يحبك (كتاب إلكتروني)</p>
+                        <h2>24.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -703,12 +705,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book3.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">كتالوج الحب (كتاب إلكتروني)</p>
+                        <h2>19.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -719,12 +721,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book4.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
+                        <p class="BoookTitle">إلى الذي أسرني حبه (كتاب إلكتروني)</p>
+                        <h2>19.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -735,12 +737,12 @@
 
                 <div class="card">
                     <div class="header">
-                        <img src="assets/images/book.png" alt="" srcset="">
+                        <img src="assets/images/Books/Book5.jpg" alt="" srcset="">
                     </div>
                     <div class="body">
-                        <h1>كتاب إلكتروني</h1>
-                        <p>كبرياء وهوى (كتاب إلكتروني)</p>
-                        <h2>17.9 <sub>رس</sub></h2>
+                        <h1><img src="assets/images/bookIcon.png" alt=""> كتاب إلكتروني</h1>
+                        <p class="BoookTitle">زواج غير متوقع (كتاب إلكتروني)</p>
+                        <h2>3.99 <sub>رس</sub></h2>
                     </div>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
@@ -748,6 +750,7 @@
                         <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
+
             </div>
         </section>
     </section>

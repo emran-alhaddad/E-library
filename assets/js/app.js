@@ -29,3 +29,36 @@ const allCounters = () => {
     LastOffers("Jan 25, 2022 08:20:00", "lastOffers5");
 
 }
+
+
+// Search Code
+function search_books() {
+    let input = document.getElementById('search').value
+    input = input.toLowerCase();
+    let x = document.getElementsByClassName('BoookTitle');
+
+
+    if (input.length > 0)
+        hide_Show_Others('none');
+    else
+        hide_Show_Others('initial');
+
+    for (i = 0; i < x.length; i++) {
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            document.getElementsByClassName('card')[i].style = "flex: 1;";
+            x[i].parentNode.parentNode.style.display = "none";
+
+        } else {
+            document.getElementsByClassName('card')[i].style = "flex: none;";
+            x[i].parentNode.parentNode.style.display = "initial";
+
+        }
+    }
+}
+
+const hide_Show_Others = (state) => {
+    let divs = document.getElementsByClassName('hide');
+    for (const div of divs) {
+        div.style.display = state;
+    }
+}
