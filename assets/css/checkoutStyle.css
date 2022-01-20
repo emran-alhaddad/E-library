@@ -1,0 +1,124 @@
+:root {
+    --border-focused-false: rgb(145, 16, 16);
+    --border-focused-true: rgb(94, 255, 0);
+}
+
+* {
+    transition: all ease-in-out 0.3s;
+}
+
+body {
+    background-color: white;
+    transition: all ease-in-out 0.8s;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-left: 5px solid var(--border-focused-false);
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    padding: 6px 25px;
+    margin-top: 4px;
+    border-radius: 5px;
+    word-spacing: 10px;
+    border-left: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #47e7ad;
+}
+
+#prevBtn {
+    background-color: darkred;
+}
+
+#prevBtn:hover {
+    background-color: lightcoral;
+}
+
+.containerForm {
+    border-radius: 17px;
+    color: black;
+    padding: 20px;
+    margin: 20px auto;
+    width: 30vw;
+    padding-top: 60px;
+    position: relative;
+    box-shadow: 0 0 10px;
+}
+
+.inputSuccessLightThem {
+    border-left: 5px solid;
+    border-color: var(--border-focused-true);
+}
+
+.inputFaildLightThem {
+    border-color: var(--border-focused-false);
+}
+
+
+/* Hide all steps by default: */
+
+.tab {
+    display: none;
+    transition: 1s;
+}
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+
+/* Mark the active step: */
+
+.step.active {
+    opacity: 1;
+}
+
+
+/* Mark the steps that are finished and valid: */
+
+.step.finish {
+    background-color: #04AA6D;
+}
+
+@media (max-width:800px) {
+    .containerForm {
+        width: 70vw;
+    }
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.controls.both {
+    justify-content: flex-end;
+}
+
+.tab img {
+    width: 50%;
+    margin-left: 25%;
+}

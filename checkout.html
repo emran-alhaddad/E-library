@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="assets/css/checkoutStyle.css">
+
+</head>
+
+<body onload="disapleAll();">
+    <div class="containerForm">
+        <form action="index.html" id="checkoutForm">
+
+            <div class="tab">
+                <h1>
+                    User Information:
+                </h1>
+
+                <label for="firstName">First-Name</label>
+                <input class="" type="text" onkeyup="validateName(this);" id="firstName" name="firstName" placeholder="Your First Name..">
+
+                <label for="lastName">Last-Name</label>
+                <input class="input" type="text" onkeyup="validateName(this);" id="lastName" name="lastName" placeholder="Your Last Name..">
+
+                <label for="email">Email</label>
+                <input class="input" type="email" onkeyup="validateEmail(this);" id="email" name="email" placeholder="example@gmail.com">
+
+                <label for="Phone">Phone</label>
+                <input class="input" type="tel" onkeyup="validatePhone(this);" id="Phone" name="Phone" placeholder="777xxxxxx">
+
+            </div>
+
+            <div class="tab">
+                <h1>
+                    Payment Information:
+                </h1>
+
+                <label for="cardName">Card-Name</label>
+                <input class="input" type="text" onkeyup="validateCardName(this);" id="cardName" name="cardName" placeholder="Card Name..">
+
+                <label for="cardNumber">Card-Number</label>
+                <input class="input" type="number" onkeyup="validateCardNumber(this);" id="cardNumber" name="cardNumber" placeholder="Your Card Number..">
+
+            </div>
+
+            <div class="tab">
+                <h1>
+                    Confirm Payment:
+                </h1>
+
+                <label for="Address">Address</label>
+                <input class="" type="text" onkeyup="validateAddress(this);" id="Address" name="Address" placeholder="Address..">
+
+                <label for="City">City</label>
+                <input class="input" type="text" onkeyup="validateCity(this);" id="City" name="City" placeholder="City..">
+
+            </div>
+
+            <div class="tab">
+                <h1>
+                    Payment State:
+                </h1>
+
+                <img src="assets/images/Done.png" alt="">
+            </div>
+
+            <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+            </div>
+            <div id="myControls" class="controls both">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+
+
+        </form>
+    </div>
+
+    <script src="assets/js/checkout.js"></script>
+</body>
+
+
+</html>
