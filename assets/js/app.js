@@ -62,3 +62,32 @@ const hide_Show_Others = (state) => {
         div.style.display = state;
     }
 }
+
+
+// Bag Counter 
+
+const AddProduct = () => {
+
+    if (noProducts > 0) {
+        document.getElementById('BagCounter').style.visibility = "visible";
+        document.getElementById('BagCounter').innerText = noProducts;
+        document.getElementById('BagCounter').style.visibility = "visible";
+        document.getElementById('BagImage').src = "assets/icons/BagFull.svg";
+    } else {
+        document.getElementById('BagCounter').style.visibility = "hidden";
+        document.getElementById('BagImage').src = "assets/icons/svgexport-51.svg";
+    }
+}
+
+var btns = document.getElementsByClassName('origin');
+for (const btn of btns) {
+
+    btn.addEventListener("click", function() {
+        noProducts++;
+        AddProduct();
+        localStorage.setItem('noProducts', noProducts);
+    });
+}
+
+var noProducts = (localStorage.length > 0 ? Number(localStorage.getItem('noProducts')) : 0);
+AddProduct();

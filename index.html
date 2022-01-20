@@ -13,7 +13,6 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/account-style.css">
-    <script src="assets/js/app.js"></script>
 </head>
 
 <body onload="allCounters()">
@@ -23,11 +22,21 @@
         <nav>
             <ul>
                 <li onclick="showModule('sign-in');"> <img src="assets/icons/svgexport-1.svg" alt=""> ادخل حسابك أو سجل الأن </li>
-                <li><img src="assets/icons/svgexport-54.svg" alt="">الرئيسية</li>
-                <li><img src="assets/icons/svgexport-3.svg" alt="">من نحن </li>
-                <li><img src="assets/icons/svgexport-4.svg" alt="">أتصل بنا </li>
-                <li><img src="assets/icons/svgexport-5.svg" alt="">المساعدة</li>
-                <li><img src="assets/icons/svgexport-11.svg" alt="">سياسة الخصوصية</li>
+                <li>
+                    <a href="index.html"><img src="assets/icons/svgexport-54.svg" alt="">الرئيسية</a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/icons/svgexport-3.svg" alt="">من نحن </a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/icons/svgexport-4.svg" alt="">أتصل بنا </a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/icons/svgexport-5.svg" alt="">المساعدة</a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/icons/svgexport-11.svg" alt="">سياسة الخصوصية</a>
+                </li>
                 <li><img src="assets/icons/svgexport-12.svg" alt="">اليمن YER</li>
                 <li><img src="assets/icons/svgexport-14.svg" alt=""> English</li>
             </ul>
@@ -49,10 +58,10 @@
                 <input type="submit" value="">
             </form>
             <div class="bag">
-                <div>
-                    <span></span>
+                <div style="position:relative ;">
+                    <span id="BagCounter">5</span>
                     <a href="shopBag.html">
-                        <img src="assets/icons/svgexport-51.svg" alt="">
+                        <img src="assets/icons/svgexport-51.svg" id="BagImage" alt="">
                     </a>
                 </div>
             </div>
@@ -943,6 +952,8 @@
     </div>
 
     <!-- Finish Sign-up Pop Up -->
+
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
