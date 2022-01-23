@@ -11,13 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/checkoutStyle.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/account-style.css">
-
+    <link rel="stylesheet" href="assets/css/details.css">
 </head>
 
-<body onload="disapleAll();">
+<body>
 
     <!-- Start Header -->
     <header>
@@ -119,76 +118,98 @@
             </aside>
         </section>
         <!-- End Carosal  -->
-        <div class="containerForm">
-            <form action="index.html" id="checkoutForm">
 
-                <div class="tab">
+        <menu class="subMenue">
+            <ul>
+                <li><a href="">الرئيسية</a></li>
+                <li><a href="">الكتب العربية</a></li>
+                <li><a href="">كتب إلكترونية</a></li>
+                <li><a href="">لأنك الله (كتاب إلكتروني)</a></li>
+            </ul>
+        </menu>
+        <section class="categories">
+            <main class="presentations">
+                <div class="container">
+
+                    <div class="card">
+                        <div class="header">
+                            <img src="assets/images/Books/Book1.jpg" alt="" srcset="">
+                        </div>
+                        <div class="body">
+                            <div class="slider">
+
+                            </div>
+                        </div>
+                        <div class="footer">
+
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="header">
+                            <h1>لأنك الله (كتاب إلكتروني)</h1>
+                            <a href="#"> عرض المزيد 🔽</a>
+                            <div class="price">
+                                <h1> 12.99
+                                    <sub>ر.س.</sub>
+                                </h1>
+                                <span>شامل الضريبة</span>
+                            </div>
+                            <div class="body">
+                                <div>
+                                    <span>وحدة البيع:</span>
+                                    <span>Each</span>
+                                </div>
+                                <div>
+                                    <span>*****</span>
+                                    <span><a href="#">(المراجعات 15)</a></span>
+                                </div>
+                                <div>
+                                    <span>رقم المنتج</span>
+                                    <span>4</span>
+                                    <span>رقم الصنف</span>
+                                    <span>JBB410156</span>
+                                </div>
+                            </div>
+                            <div class="footer">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="header">
+                            <img src="assets/images/Books/Book1.jpg" alt="" srcset="">
+                        </div>
+                        <div class="body">
+                            <div class="slider">
+
+                            </div>
+                        </div>
+                        <div class="footer">
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="container">
+                    <input type="button" id="showMoreBtn" value="عرض المزيد">
+                </div>
+
+                <hr size="12" style="background-color: rgb(241 241 241);">
+                <div style="all: inherit; margin-top: 0;">
                     <h1>
-                        User Information:
+                        <a href="#" style="color: rgb(70 127 70); ">
+                             أشتر من كتب إلكترونية على متجر جرير الإلكتروني
+                    </a>
                     </h1>
-
-                    <label for="firstName">First-Name</label>
-                    <input class="" type="text" onkeyup="validateName(this);" id="firstName" name="firstName" placeholder="Your First Name..">
-
-                    <label for="lastName">Last-Name</label>
-                    <input class="input" type="text" onkeyup="validateName(this);" id="lastName" name="lastName" placeholder="Your Last Name..">
-
-                    <label for="email">Email</label>
-                    <input class="input" type="email" onkeyup="validateEmail(this);" id="email" name="email" placeholder="example@gmail.com">
-
-                    <label for="Phone">Phone</label>
-                    <input class="input" type="tel" onkeyup="validatePhone(this);" id="Phone" name="Phone" placeholder="777xxxxxx">
-
                 </div>
+            </main>
+        </section>
 
-                <div class="tab">
-                    <h1>
-                        Payment Information:
-                    </h1>
-
-                    <label for="cardName">Card-Name</label>
-                    <input class="input" type="text" onkeyup="validateCardName(this);" id="cardName" name="cardName" placeholder="Card Name..">
-
-                    <label for="cardNumber">Card-Number</label>
-                    <input class="input" type="number" onkeyup="validateCardNumber(this);" id="cardNumber" name="cardNumber" placeholder="Your Card Number..">
-
-                </div>
-
-                <div class="tab">
-                    <h1>
-                        Confirm Payment:
-                    </h1>
-
-                    <label for="Address">Address</label>
-                    <input class="" type="text" onkeyup="validateAddress(this);" id="Address" name="Address" placeholder="Address..">
-
-                    <label for="City">City</label>
-                    <input class="input" type="text" onkeyup="validateCity(this);" id="City" name="City" placeholder="City..">
-
-                </div>
-
-                <div class="tab">
-                    <h1>
-                        Payment State:
-                    </h1>
-
-                    <img src="assets/images/Done.gif" alt="">
-                </div>
-
-                <div style="text-align:center;margin-top:40px;">
-                    <span class="step"></span>
-                    <span class="step"></span>
-                    <span class="step"></span>
-                    <span class="step"></span>
-                </div>
-                <div id="myControls" class="controls both">
-                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-                </div>
-
-
-            </form>
-        </div>
     </section>
     <!-- End Body Section  -->
 
@@ -381,8 +402,6 @@
     <!-- Finish Sign-up Pop Up -->
 
     <script src="assets/js/app.js"></script>
-    <script src="assets/js/checkout.js"></script>
 </body>
-
 
 </html>

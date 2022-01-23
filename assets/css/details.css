@@ -1,0 +1,26 @@
+.card .header .price h1 {
+    color: red;
+    margin: 0;
+    font-size: initial;
+}
+
+.card .header .price h1 sub {
+    color: rgba(255, 0, 0, 0.384);
+    font-size: 12px;
+}
+
+.card .header h1,
+.card .header a {
+    margin: 0 10px;
+}
+
+.card .header .price span {
+    color: #ccc;
+    font-size: x-small;
+}
+
+.card .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
