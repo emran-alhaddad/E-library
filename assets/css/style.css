@@ -462,6 +462,15 @@ li {
     width: 95%;
     margin: auto;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.categories2 {
+    margin: 0;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .categories>h1 {
@@ -478,7 +487,7 @@ li {
 
 .simpleCard {
     background-color: #FFF;
-    box-shadow: 0 0 10px;
+    box-shadow: 0 0 3px;
     text-align: center;
     padding: 10px;
     margin: 10px;
@@ -539,7 +548,9 @@ li {
     outline: 1px solid red;
 }
 
-.card .header {}
+.card .header {
+    animation: none;
+}
 
 .card .body h1 {
     display: flex;
@@ -679,4 +690,175 @@ footer .second img {
     nav {
         display: none;
     }
+    .categories2 {
+        flex-direction: column;
+    }
+}
+
+
+/* Categories Styling */
+
+.categories aside {
+    flex: 1;
+    padding: 12px 0 0 12px;
+}
+
+.categories main {
+    flex: 4;
+}
+
+.subMenue {
+    width: inherit;
+    padding: inherit;
+    margin: inherit;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.subMenue ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.subMenue ul li {
+    margin-left: 15px;
+}
+
+.subMenue ul li a {
+    text-decoration: none;
+    color: rgb(71 131 218);
+}
+
+.subMenue ul li:not(:last-child)::after {
+    content: " / ";
+    color: rgb(168, 167, 167);
+    margin-right: 12px;
+}
+
+#showMoreBtn {
+    flex: 1;
+    font: inherit;
+    padding: 5px;
+    margin: 0 10px;
+    background-color: rgb(38 117 194);
+    color: white;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sortByDiv {
+    font: -webkit-control;
+    text-align: left;
+    padding: 10px;
+}
+
+.sortByDiv select {
+    margin-right: 10px;
+    width: 130px;
+    padding: 2px;
+}
+
+.oneLineDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.oneLineDiv a {
+    color: rgb(71 131 218);
+    padding-left: 10px;
+}
+
+.categoriesFilter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.categoriesFilter .top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid rgb(20 92 19);
+    border-radius: 5px;
+    padding-right: 10px;
+}
+
+.categoriesFilter .top img {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.categoriesFilter .top h1 {
+    color: rgb(20 92 19);
+}
+
+.categoriesFilter .filterBox {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(235 245 255)
+}
+
+.categoriesFilter .header {
+    background-color: rgb(20 92 19);
+    padding: 3px 10px;
+    border-radius: 5px 5px 0 0;
+    color: rgb(160 191 162);
+}
+
+.categoriesFilter .header h1 {
+    margin: 10px 0;
+}
+
+.categoriesFilter .body {
+    background-color: rgb(237 246 255);
+    padding: 10px 0;
+}
+
+.categoriesFilter .body .itemFilter .itemFilterHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 0 10px;
+}
+
+.itemFilterHead img {
+    width: 20px;
+}
+
+.categoriesFilter .body hr {
+    font-size: smaller;
+}
+
+.itemFilter .itemFilterContent {
+    background-color: #fff;
+}
+
+.itemFilter .itemFilterContent input[type=range] {
+    width: 90%;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.itemFilter .itemFilterContent input[type=range]::after {
+    content: "ر.س 150";
+    bottom: -5px;
+    left: 0;
+    position: absolute;
+    color: rgb(169 177 186);
+}
+
+.itemFilter .itemFilterContent input[type=range]::before {
+    content: "ر.س 0";
+    bottom: -5px;
+    position: absolute;
+    color: rgb(169 177 186);
 }

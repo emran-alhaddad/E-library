@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/account-style.css">
     <link rel="stylesheet" href="assets/css/shopBagStyle.css">
-    <script src="assets/js/app.js"></script>
 </head>
 
 <body>
@@ -55,14 +54,14 @@
                 <img src="assets/icons/svgexport-48.svg" alt="Logo" srcset="">
             </div>
             <form action="" class="searchBox">
-                <input type="text" name="seach" id="search">
+                <input type="text" name="seach" id="search" onkeyup="search_books();">
                 <input type="submit" value="">
             </form>
             <div class="bag">
-                <div>
-                    <span></span>
+                <div style="position:relative ;">
+                    <span id="BagCounter">5</span>
                     <a href="shopBag.html">
-                        <img src="assets/icons/svgexport-51.svg" alt="">
+                        <img src="assets/icons/svgexport-51.svg" id="BagImage" alt="">
                     </a>
                 </div>
             </div>
@@ -408,6 +407,8 @@
     </div>
 
     <!-- Finish Sign-up Pop Up -->
+
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
