@@ -9,7 +9,8 @@
     position: fixed;
     font-size: 1vw;
     overflow-y: auto;
-    visibility: hidden;
+    transform: scale(0);
+    transition: 0.5s;
 }
 
 #sign-in form,

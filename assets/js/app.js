@@ -1,5 +1,11 @@
-const showModule = id => document.getElementById(id).style.visibility = "visible";
-const hideModule = id => document.getElementById(id).style.visibility = "hidden";
+document.body.setAttribute("onload", "init();");
+
+const showModule = id => {
+    document.getElementById(id).style = "transform: scale(1)";
+}
+const hideModule = id => {
+    document.getElementById(id).style = "transform: scale(0)";
+}
 
 
 const LastOffers = (date, id) => {
@@ -11,12 +17,12 @@ const LastOffers = (date, id) => {
         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        document.getElementById(id).innerHTML = days + "d " + hours + "h " +
-            minutes + "m " + seconds + "s ";
+        document.getElementById(id).innerHTML = "الوقت المتبقي للخصم: " + days + "d " + hours + ":" +
+            minutes + ":" + seconds + " ";
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById(id).innerHTML = "EXPIRED";
-            document.getElementById(id).style.color = "red";
+            document.getElementById(id).innerHTML = "إنتهت مدة الخصم";
+            document.getElementById(id).style = "color:red; text-decoration: line-through;";
         }
     }, 1000);
 }
@@ -26,7 +32,7 @@ const allCounters = () => {
     LastOffers("Jan 21, 2022 00:47:55", "lastOffers2");
     LastOffers("Jan 19, 2022 23:47:55", "lastOffers3");
     LastOffers("Jan 20, 2022 00:00:00", "lastOffers4");
-    LastOffers("Jan 25, 2022 08:20:00", "lastOffers5");
+    LastOffers("Jan 30, 2022 08:20:00", "lastOffers5");
 
 }
 
@@ -66,11 +72,29 @@ const hide_Show_Others = (state) => {
 
 // Bag Counter 
 
+function init() {
+    var btns = document.getElementsByClassName('origin');
+    for (const btn of btns) {
+
+        btn.addEventListener("click", function() {
+            let image = this.parentNode.parentNode.children[0].children[0].src;
+            let title = this.parentNode.parentNode.children[1].children[1].innerHTML;
+            let price = this.parentNode.parentNode.children[1].children[2].innerHTML;
+            localStorage.setItem('Product' + (localStorage.length + 1), [image, title, price]);
+            alert("تم إضافة المنتج إلى السلة");
+            AddProduct();
+
+        });
+    }
+    AddProduct();
+    showCardProducts();
+}
+
 const AddProduct = () => {
 
-    if (noProducts > 0) {
+    if (localStorage.length > 0) {
         document.getElementById('BagCounter').style.visibility = "visible";
-        document.getElementById('BagCounter').innerText = noProducts;
+        document.getElementById('BagCounter').innerText = localStorage.length;
         document.getElementById('BagCounter').style.visibility = "visible";
         document.getElementById('BagImage').src = "assets/icons/BagFull.svg";
     } else {
@@ -79,19 +103,13 @@ const AddProduct = () => {
     }
 }
 
-var btns = document.getElementsByClassName('origin');
-for (const btn of btns) {
 
-    btn.addEventListener("click", function() {
-        noProducts++;
-        AddProduct();
-        localStorage.setItem('noProducts', noProducts);
-    });
-}
 
-var noProducts = (localStorage.length > 0 ? Number(localStorage.getItem('noProducts')) : 0);
-AddProduct();
 
+
+
+
+// Gallary Show Section 
 
 const callImage = image => {
 
@@ -99,10 +117,70 @@ const callImage = image => {
 
     document.getElementById("Gallary").innerHTML = "<div class='card'>" +
         image.parentNode.parentNode.innerHTML.replaceAll("boxImage", "boxImage2") + "</div>";
-
     showModule('popUP');
 }
 
 const switchImage = (image, id) => {
     document.getElementById(id).setAttribute("src", image.getAttribute("src"));
+}
+
+
+// Show Shopping Items in Shopping Bag
+
+const showCardProducts = () => {
+    document.getElementById('noBagItems').innerText = "(" + localStorage.length + " منتجات)";
+    if (localStorage.length > 0) {
+        document.getElementById('noBagItems').innerText = "(" + localStorage.length + " منتجات)";
+        document.getElementById('itemsCards').innerHTML = "";
+        var totalPrice = 0;
+
+        for (let index = 0; index < localStorage.length; index++) {
+            let Product = localStorage.getItem(localStorage.key(index)).split(',');
+            totalPrice += Number(Product[2].slice(0, Product[2].indexOf("<sub>")));
+            let item = '<div class="shoppingItem" id="Product' + (index + 1) + '">' +
+                '<div class="itemBody">' +
+                '<div>' +
+                '<img src="' + Product[0] + '" class="icon">' +
+                '</div>' +
+                '<div class="content">' +
+                '<h1>' + Product[1] + '</h1>' +
+                '<p>منتج قابل للخصم لحاملي بطاقة خصم جرير</p>' +
+                '<div class="note">' +
+                '<p> <b>ملاحظة: </b> هذا المنتج رقمي وسيتم توصيلة من خلال البريد الإلكتروني </p>' +
+                '<a href="#">كيفية الحصول على المنتج ؟</a>' +
+                '</div>' +
+                '</div>' +
+                '<div class="price">' +
+                '<h1 >' + Product[2] + '</h1>' +
+                '<select name="" id="">' +
+                '<option value="1">1</option>' +
+                '<option value="2">2</option>' +
+                '<option value="3">3</option>' +
+                '<option value="4">4</option>' +
+                '<option value="5">5</option>' +
+                '</select>' +
+                '</div>' +
+                '</div>' +
+                '<hr>' +
+                '<div class="itemFooter">' +
+                '<ul>' +
+                '<li onclick="deleteProduct(\'Product' + (index + 1) + '\')" style="cursor:pointer;">احذف</li>' +
+                '</ul>' +
+                '</div>' +
+                '</div>';
+            document.getElementById('itemsCards').innerHTML = document.getElementById('itemsCards').innerHTML + item;
+
+        }
+
+
+        document.getElementById('totalPrice').innerHTML = totalPrice + "<sub>ر.س.</sub>";
+        document.getElementById('allTotalPrices').innerHTML = totalPrice + "<sub class='red'>ر.س.</sub>";
+    }
+}
+
+const deleteProduct = id => {
+    alert(id);
+    document.getElementById(id).remove();
+    localStorage.removeItem(id);
+    noProducts--;
 }

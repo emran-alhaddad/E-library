@@ -303,16 +303,9 @@
     position: fixed;
     top: 0;
     background-color: rgba(3, 3, 3, 0.6);
-    visibility: hidden;
-    transition: 1s;
+    transition: all ease-in-out 0.5s;
+    transform: scale(0);
 }
-
-
-/* #imageView {
-    width: 50%;
-    height: 50%;
-    margin-left: 25%;
-} */
 
 #Gallary {
     display: flex;

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/shopBagStyle.css">
 </head>
 
-<body>
+<body onload="showCardProducts();">
 
     <!-- Start Header -->
     <header>
@@ -70,19 +70,19 @@
         <div id="bagTitle">
             <img src="assets/icons/cart-2.svg" alt="">
             <div>
-                <h1>السلــــة<sub style="font-size: 10px;">(5 منتجات)</sub> </h1>
+                <h1>السلــــة<sub style="font-size: 10px;" id="noBagItems">(5 منتجات)</sub> </h1>
 
             </div>
         </div>
         <div class="bagBody">
-            <div class="right">
+            <div id="itemsCards" class="right">
                 <div class="shoppingItem">
                     <div class="itemBody">
                         <div>
-                            <img src="assets/images/book.jpg" alt="" class="icon">
+                            <img id="itemImage1" src="assets/images/book.jpg" alt="" class="icon">
                         </div>
                         <div class="content">
-                            <h1>البداية والنهاية الجز الأول (كتاب إلكتروني)</h1>
+                            <h1 id="itemTitle1">البداية والنهاية الجز الأول (كتاب إلكتروني)</h1>
                             <p>منتج قابل للخصم لحاملي بطاقة خصم جرير</p>
                             <div class="note">
                                 <p> <b>ملاحظة: </b> هذا المنتج رقمي وسيتم توصيلة من خلال البريد الإلكتروني </p>
@@ -90,7 +90,7 @@
                             </div>
                         </div>
                         <div class="price">
-                            <h1> 3.99
+                            <h1 id="itemPrice1"> 3.99
                                 <sub>ر.س.</sub>
                             </h1>
                             <select name="" id="">
@@ -186,7 +186,7 @@
                     <div class="top">
                         <div class="lineDetails">
                             <h3>المجموع</h3>
-                            <h3>68.97
+                            <h3 id="totalPrice">68.97
                                 <sub>ر.س.</sub>
                             </h3>
                         </div>
@@ -200,7 +200,7 @@
                             <h1 class="red">المجموع الكلي
                                 <sub>شامل الضريبة</sub>
                             </h1>
-                            <h3 class="red">68.97
+                            <h3 class="red" id="allTotalPrices">68.97
                                 <sub class="red">ر.س.</sub>
                             </h3>
                         </div>
