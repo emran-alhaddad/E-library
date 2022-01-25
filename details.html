@@ -133,12 +133,26 @@
                 <div class="container">
 
                     <div class="card">
-                        <div class="header">
-                            <img src="assets/images/Books/Book1.jpg" alt="" srcset="">
+                        <div class="header" style="height: 85%;">
+                            <img id='boxImage' src="assets/images/Books/Book1.jpg" height="100%" onclick="callImage(this);">
                         </div>
                         <div class="body">
                             <div class="slider">
-
+                                <div class="image">
+                                    <img src="assets/images/Books/Book2.jpg" onclick="switchImage(this,'boxImage');">
+                                </div>
+                                <div class="image">
+                                    <img src="assets/images/Books/Book3.jpg" onclick="switchImage(this,'boxImage');">
+                                </div>
+                                <div class="image">
+                                    <img src="assets/images/Books/Book4.jpg" onclick="switchImage(this,'boxImage');">
+                                </div>
+                                <div class="image">
+                                    <img src="assets/images/Books/Book5.jpg" onclick="switchImage(this,'boxImage');">
+                                </div>
+                                <div class="image">
+                                    <img src="assets/images/Books/Book1.jpg" onclick="switchImage(this,'boxImage');">
+                                </div>
                             </div>
                         </div>
                         <div class="footer">
@@ -146,7 +160,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card card-Temp">
                         <div class="header">
                             <h1>لأنك الله (كتاب إلكتروني)</h1>
                             <a href="#"> عرض المزيد 🔽</a>
@@ -156,58 +170,346 @@
                                 </h1>
                                 <span>شامل الضريبة</span>
                             </div>
-                            <div class="body">
-                                <div>
-                                    <span>وحدة البيع:</span>
-                                    <span>Each</span>
+                        </div>
+                        <div class="body">
+                            <div>
+                                <span>وحدة البيع:</span>
+                                <span>Each</span>
+                            </div>
+                            <div>
+                                <span>*****</span>
+                                <span><a href="#">(المراجعات 15)</a></span>
+                            </div>
+                            <div>
+                                <span>رقم المنتج</span>
+                                <span>4</span>
+                                <span>رقم الصنف</span>
+                                <span>JBB410156</span>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <span>الصيغ المتوفرة</span>
+                            <div class="oneLineDiv" style="width: 100%;">
+                                <div class="oneLineDiv">
+                                    <input type="radio" checked name="" id="">
+                                    <label for="">كتاب إلكتروني</label>
+                                    <img src="assets/icons/Question.png" alt="">
                                 </div>
-                                <div>
-                                    <span>*****</span>
-                                    <span><a href="#">(المراجعات 15)</a></span>
-                                </div>
-                                <div>
-                                    <span>رقم المنتج</span>
-                                    <span>4</span>
-                                    <span>رقم الصنف</span>
-                                    <span>JBB410156</span>
+                                <div class="price">
+                                    <h1> 12.99
+                                        <sub>ر.س.</sub>
+                                    </h1>
+                                    <span>شامل الضريبة</span>
                                 </div>
                             </div>
-                            <div class="footer">
 
+                            <div class="oneLineDiv" style="width: 100%;">
+                                <div class="oneLineDiv">
+                                    <input type="radio" checked name="" id="">
+                                    <label for="">كتاب مطبوع</label>
+                                    <img src="assets/icons/Question.png" alt="">
+                                </div>
+                                <div class="price">
+                                    <h1> 17.25
+                                        <sub>ر.س.</sub>
+                                    </h1>
+                                    <span>شامل الضريبة</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card card-Temp">
+                        <div class="card">
+                            <div class="header">
+                                <div class="note">
+                                    <p> <b>ملاحظة: </b> سيتم إضافة هذا الكتاب الإلكتروني إلى مكتبتك في قارئ جرير
+                                    </p>
+                                    <a href="#">اقرأ المزيد</a>
+                                </div>
+                            </div>
+                            <div class="body">
+                                <div class="row">
+
+                                    <select name="" id="">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    <input type="button" value="أضف إلى السلة">
+                                </div>
+                                <div class="all-Market-Tags">
+                                    <div class="row">
+                                        <span class="marketTags">
+                                        <img src="assets/icons/Market.png" alt="">
+                                        تسوق أمن
+                                        <img src="assets/icons/Question.png" alt="">
+                                    </span>
+                                        <span class="marketTags">
+                                        <img src="assets/icons/safe.png" alt="">
+                                        أصلي ومضمون
+                                        <img src="assets/icons/Question.png" alt="">
+                                    </span>
+                                    </div>
+
+                                    <div class="row">
+                                        <span class="marketTags">
+                                        <img src="assets/icons/Delivery.png" alt="">
+                                        شحن سريع ومجاني
+                                        <img src="assets/icons/Question.png" alt="">
+                                    </span>
+                                    </div>
+                                </div>
+                                <hr width="100%">
+                            </div>
+                            <div class="footer">
+                                <div class="row">
+                                    <button>
+                                        <img src="assets/icons/Share.png" alt="">
+                                        مشاركة
+                                    </button>
+                                    <button>
+                                        <img src="assets/icons/Heart.png" alt="">
+                                        المفضلة
+                                    </button>
+                                    <button>
+                                        <img src="assets/icons/Transfere.png" alt="">
+                                        مقارنة
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="header"></div>
+                            <div class="body"></div>
+                            <hr width="100%">
+                            <div class="footer">
+                                <div class="row">
+                                    <button>
+                                        <img src="assets/icons/Share.png" alt="">
+                                        مشاركة
+                                    </button>
+                                    <button>
+                                        <img src="assets/icons/Heart.png" alt="">
+                                        المفضلة
+                                    </button>
+                                    <button>
+                                        <img src="assets/icons/Transfere.png" alt="">
+                                        مقارنة
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemDescrition">
+                    <p>
+                        كتاب يتحدث عن بعض أسماء الله الحسنى وكيف نعيشها في حياتنا حرصا المؤلف أن يكون الكتاب مناسب لمن هم متوسطي الثقافة ويكون مناسبا للمحتاج والمريض والسليم
+                    </p>
+                </div>
+                <div class="container" style="flex-direction: column; margin-bottom: 0;">
+                    <div class="card card-Temp margin-0 padding-0 border-btm">
                         <div class="header">
-                            <img src="assets/images/Books/Book1.jpg" alt="" srcset="">
+                            <h1> المواصفات</h1>
+                        </div>
+
+                        <div class="body">
+                            <div class="table">
+                                <div class="trow">
+                                    <span>رقم الصنف</span>
+                                    <b>JBB410156</b>
+                                </div>
+                                <div class="trow">
+                                    <span>رقم المنتج</span>
+                                    <b>4</b>
+                                </div>
+                                <div class="trow">
+                                    <span>المؤلف</span>
+                                    <b>علي جابر الفيفي</b>
+                                </div>
+                                <div class="trow">
+                                    <span>الناشر</span>
+                                    <b>دار الحضارة للنشر والتوزيع</b>
+                                </div>
+                                <div class="trow">
+                                    <span>تاريخ النشر </span>
+                                    <b>2016</b>
+                                </div>
+                                <div class="trow">
+                                    <span>صيغة الكتاب</span>
+                                    <b>Ebook</b>
+                                </div>
+                                <div class="trow">
+                                    <span>عدد الصفحات</span>
+                                    <b>182</b>
+                                </div>
+                                <div class="trow">
+                                    <span>وزن الشحن (كجم)</span>
+                                    <b>0.0100</b>
+                                </div>
+                                <div class="trow">
+                                    <span>صيغة الملف</span>
+                                    <b>ePub</b>
+                                </div>
+                                <div class="trow">
+                                    <span>اللغة</span>
+                                    <b>عربي</b>
+                                </div>
+                                <div class="tFooter">
+                                    <a href="#">عرض أقل  ^</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-Temp margin-0 padding-0 border-btm">
+                        <div class="header">
+                            <h1> مراجعات العملاء
+                                <input class="primary-btn" type="button" value="إكتب مراجعتك">
+                            </h1>
+                        </div>
+
+                        <div class="body">
+                            <div class="reviwes">
+                                <div class="review">
+                                    <div class="header">
+                                        <h3>good</h3>
+                                        <div class="oneLineDiv">
+                                            <span>من قبل reem</span>
+                                            <span>2021/11/16</span>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <p>
+                                            Good
+                                        </p>
+                                    </div>
+                                    <div class="footer"></div>
+                                </div>
+                                <div class="review">
+                                    <div class="header">
+                                        <h3>كتاب رائع</h3>
+                                        <div class="oneLineDiv">
+                                            <span>من قبل خالد أبو جميلة</span>
+                                            <span>2021/9/25</span>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <p>
+                                            جميل جدا
+                                        </p>
+                                    </div>
+                                    <div class="footer"></div>
+                                </div>
+                                <div class="review">
+                                    <div class="header">
+                                        <h3>لأنك الله</h3>
+                                        <div class="oneLineDiv">
+                                            <span>من قبل باسل</span>
+                                            <span>2021/9/20</span>
+                                        </div>
+                                    </div>
+                                    <div class="body">
+                                        <p>
+                                            جميل جدا ومفيد
+                                        </p>
+                                    </div>
+                                    <div class="footer"></div>
+
+
+                                </div>
+                                <div class="reviewsFooter">
+                                    <a href="#">إضهار جميع المراجعات (15)  &gt;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="oneLineDiv">
+                    <h1> منتجات مشابهة</h1>
+                </div>
+                <div class="container">
+                    <div class="card card2">
+                        <div class="header">
+                            <img src="assets/images/Books/Book1.jpg" width="100" alt="" srcset="">
                         </div>
                         <div class="body">
-                            <div class="slider">
+                            <h1>كبرياء وهوى</h1>
+                            <h2>17.99 <sub>رس</sub></h2>
+                        </div>
+                        <div class="footer">
 
-                            </div>
+                        </div>
+                    </div>
+                    <div class="card card2">
+                        <div class="header">
+                            <img src="assets/images/Books/Book1.jpg" width="100" alt="" srcset="">
+                        </div>
+                        <div class="body">
+                            <h1>كبرياء وهوى</h1>
+                            <h2>17.99 <sub>رس</sub></h2>
+                        </div>
+                        <div class="footer">
+
+                        </div>
+                    </div>
+                    <div class="card card2">
+                        <div class="header">
+                            <img src="assets/images/Books/Book1.jpg" width="100" alt="" srcset="">
+                        </div>
+                        <div class="body">
+                            <h1>كبرياء وهوى</h1>
+                            <h2>17.99 <sub>رس</sub></h2>
+                        </div>
+                        <div class="footer">
+
+                        </div>
+                    </div>
+                    <div class="card card2">
+                        <div class="header">
+                            <img src="assets/images/Books/Book1.jpg" width="100" alt="" srcset="">
+                        </div>
+                        <div class="body">
+                            <h1>كبرياء وهوى</h1>
+                            <h2>17.99 <sub>رس</sub></h2>
+                        </div>
+                        <div class="footer">
+
+                        </div>
+                    </div>
+                    <div class="card card2">
+                        <div class="header">
+                            <img src="assets/images/Books/Book1.jpg" width="100" alt="" srcset="">
+                        </div>
+                        <div class="body">
+                            <h1>كبرياء وهوى</h1>
+                            <h2>17.99 <sub>رس</sub></h2>
+                        </div>
+                        <div class="footer">
+
+                        </div>
+                    </div>
+                    <div class="card card2">
+                        <div class="header">
+                            <img src="assets/images/Books/Book1.jpg" width="100" alt="" srcset="">
+                        </div>
+                        <div class="body">
+                            <h1>كبرياء وهوى</h1>
+                            <h2>17.99 <sub>رس</sub></h2>
                         </div>
                         <div class="footer">
 
                         </div>
                     </div>
 
+
                 </div>
 
 
-
-                <div class="container">
-                    <input type="button" id="showMoreBtn" value="عرض المزيد">
-                </div>
-
-                <hr size="12" style="background-color: rgb(241 241 241);">
-                <div style="all: inherit; margin-top: 0;">
-                    <h1>
-                        <a href="#" style="color: rgb(70 127 70); ">
-                             أشتر من كتب إلكترونية على متجر جرير الإلكتروني
-                    </a>
-                    </h1>
-                </div>
             </main>
         </section>
 
@@ -401,6 +703,19 @@
     </div>
 
     <!-- Finish Sign-up Pop Up -->
+
+    <!-- Start Gallary Viewer PopUp -->
+    <div id="popUP">
+        <div class="header">
+            <h1 id="closeGallary" onclick="hideModule('popUP');">X</h1>
+
+        </div>
+        <div id="Gallary">
+
+        </div>
+        <img id="imageView">
+    </div>
+    <!-- End Gallary Viewer PopUp -->
 
     <script src="assets/js/app.js"></script>
 </body>

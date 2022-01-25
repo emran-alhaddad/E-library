@@ -91,3 +91,18 @@ for (const btn of btns) {
 
 var noProducts = (localStorage.length > 0 ? Number(localStorage.getItem('noProducts')) : 0);
 AddProduct();
+
+
+const callImage = image => {
+
+    // document.getElementById("imageView").setAttribute("src", image.getAttribute("src"));
+
+    document.getElementById("Gallary").innerHTML = "<div class='card'>" +
+        image.parentNode.parentNode.innerHTML.replaceAll("boxImage", "boxImage2") + "</div>";
+
+    showModule('popUP');
+}
+
+const switchImage = (image, id) => {
+    document.getElementById(id).setAttribute("src", image.getAttribute("src"));
+}

@@ -161,8 +161,6 @@ section.body {
 .right .shoppingItem .price select {
     width: 56px;
     height: 40px;
-    padding: 0 16px;
-    background-position-x: 15%;
 }
 
 .right .shoppingItem .price h1 {
