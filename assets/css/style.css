@@ -1,21 +1,14 @@
 /* Initial The Bage */
 
-html {
-    direction: rtl;
-}
-
 * {
+    -ms-overflow-style: none;
+    font-family: Tajawal, sans-serif;
     box-sizing: border-box;
 }
 
 *::-webkit-scrollbar-thumb {
     background: transparent;
     border: none;
-}
-
-* {
-    -ms-overflow-style: none;
-    font-family: Tajawal, sans-serif;
 }
 
 a {
@@ -59,6 +52,7 @@ header {
 header nav {
     width: 100%;
     background-color: #e5e9f2;
+    transition: 0.5s;
 }
 
 header nav ul {
@@ -208,7 +202,7 @@ section.body {
 }
 
 .categories2 {
-    margin: 0;
+    margin: 0 10px;
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
@@ -428,15 +422,6 @@ footer .second img {
     width: 70px;
 }
 
-@media (max-width:700px) {
-    nav {
-        display: none;
-    }
-    .categories2 {
-        flex-direction: column;
-    }
-}
-
 
 /* Categories Styling */
 
@@ -599,4 +584,50 @@ footer .second img {
     bottom: -5px;
     position: absolute;
     color: rgb(169 177 186);
+}
+
+#menueBtn {
+    width: 50px;
+    position: sticky;
+    top: 0;
+    display: none;
+    z-index: 9999;
+}
+
+.naving {
+    position: static;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+}
+
+.naving li {
+    border: 0;
+}
+
+.naving li img {
+    margin: 0 5px;
+}
+
+.naving2 {
+    width: fit-content;
+    display: block;
+    height: 100%;
+    font-size: large;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 40px;
+}
+
+@media (max-width:700px) {
+    nav {
+        display: none;
+    }
+    #menueBtn {
+        display: block;
+    }
+    .categories2 {
+        flex-direction: column;
+    }
 }

@@ -1,0 +1,5 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon side-menu__burger-icon" width="32"  height="32" ><defs><symbol fill="#42526E" viewBox="0 0 32 32" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M0 5.4A1.6 1.6 0 001.6 7h28.8a1.6 1.6 0 100-3.2H1.6A1.6 1.6 0 000 5.4zM0 15a1.6 1.6 0 001.6 1.6h28.8a1.6 1.6 0 100-3.2H1.6A1.6 1.6 0 000 15z" fill="#42526E"></path></symbol></defs>
+<use xlink:href="#menu" fill="#8492A6"></use>
+<text x="0" y="100%" fill="#42526E" font-weight="bold" font-size="9px">
+القائمة </text>
+</svg>

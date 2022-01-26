@@ -185,3 +185,45 @@ const deleteProduct = id => {
     localStorage.removeItem(id);
     location.reload();
 }
+
+
+
+// Change Language Section 
+
+const changeLanguage = () => {
+    var btn = document.getElementById("languageBtn");
+    var page = document.getElementById('pageStyle');
+
+    if (btn.innerText.toUpperCase().includes("English".toUpperCase())) {
+
+        page.setAttribute("href", "assets/css/englishStyle.css");
+        btn.innerHTML = '<img src="assets/icons/Arabic.svg" alt=""> Arabic';
+
+    } else if (btn.innerText.toUpperCase().includes("Arabic".toUpperCase())) {
+
+        page.setAttribute("href", "assets/css/arabicStyle.css");
+        btn.innerHTML = '<img src="assets/icons/English.svg" alt=""> English';
+
+    }
+}
+
+
+// Toggle Navbar Menu
+
+const toggleMenue = () => {
+
+    var menue = document.getElementById('menueList');
+    var menuNav = document.getElementById('menuNav');
+    if (menue.classList.contains("naving")) {
+        menue.classList.remove("naving");
+        document.getElementById('menueBtn').style.position = "sticky";
+    } else {
+        menue.classList.add("naving");
+        document.getElementById('menueBtn').style.position = "fixed";
+    }
+
+    if (menuNav.classList.contains("naving2"))
+        menuNav.classList.remove("naving2");
+    else
+        menuNav.classList.add("naving2");
+}

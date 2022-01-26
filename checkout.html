@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/account-style.css">
     <link rel="stylesheet" href="assets/css/carousel.css">
+    <link id="pageStyle" rel="stylesheet" href="assets/css/arabicStyle.css">
 
 </head>
 
@@ -22,8 +23,8 @@
 
     <!-- Start Header -->
     <header>
-        <nav>
-            <ul>
+        <nav id="menuNav">
+            <ul id="menueList">
                 <li onclick="showModule('sign-in');"> <img src="assets/icons/svgexport-1.svg" alt=""> ادخل حسابك أو سجل الأن </li>
                 <li>
                     <a href="index.html"><img src="assets/icons/svgexport-54.svg" alt="">الرئيسية</a>
@@ -41,10 +42,12 @@
                     <a href="#"><img src="assets/icons/svgexport-11.svg" alt="">سياسة الخصوصية</a>
                 </li>
                 <li><img src="assets/icons/svgexport-12.svg" alt="">اليمن YER</li>
-                <li><img src="assets/icons/svgexport-14.svg" alt=""> English</li>
+                <li onclick="changeLanguage();" id="languageBtn"><img src="assets/icons/English.svg" alt=""> English</li>
             </ul>
 
         </nav>
+
+        <img onclick="toggleMenue();" id="menueBtn" src="assets/icons/Menue.svg" alt="">
 
     </header>
     <!-- End Header -->
