@@ -123,25 +123,24 @@
                         <div class="body">
                             <div class="slider">
                                 <div class="image">
-                                    <img src="assets/images/Books/Book2.jpg" onclick="switchImage(this,'boxImage');">
+                                    <img class="slideImage switch__" src="assets/images/Books/Book2.jpg" onclick="switchImage(this,'boxImage');">
                                 </div>
                                 <div class="image">
-                                    <img src="assets/images/Books/Book3.jpg" onclick="switchImage(this,'boxImage');">
+                                    <img class="slideImage switch__" src="assets/images/Books/Book3.jpg" onclick="switchImage(this,'boxImage');">
                                 </div>
                                 <div class="image">
-                                    <img src="assets/images/Books/Book4.jpg" onclick="switchImage(this,'boxImage');">
+                                    <img class="slideImage switch__" src="assets/images/Books/Book4.jpg" onclick="switchImage(this,'boxImage');">
                                 </div>
                                 <div class="image">
-                                    <img src="assets/images/Books/Book5.jpg" onclick="switchImage(this,'boxImage');">
+                                    <img class="slideImage switch__" src="assets/images/Books/Book5.jpg" onclick="switchImage(this,'boxImage');">
                                 </div>
                                 <div class="image">
-                                    <img src="assets/images/Books/Book1.jpg" onclick="switchImage(this,'boxImage');">
+                                    <img class="slideImage switch__" src="assets/images/Books/Book1.jpg" onclick="switchImage(this,'boxImage');">
                                 </div>
                             </div>
                         </div>
-                        <div class="footer">
+                        <!-- Navigation arrows -->
 
-                        </div>
                     </div>
 
                     <div class="card card-Temp">
@@ -175,7 +174,7 @@
                             <span>الصيغ المتوفرة</span>
                             <div class="oneLineDiv" style="width: 100%;">
                                 <div class="oneLineDiv">
-                                    <input type="radio" checked name="" id="">
+                                    <input type="radio" checked name="book" id="">
                                     <label for="">كتاب إلكتروني</label>
                                     <img src="assets/icons/Question.png" alt="">
                                 </div>
@@ -189,7 +188,7 @@
 
                             <div class="oneLineDiv" style="width: 100%;">
                                 <div class="oneLineDiv">
-                                    <input type="radio" checked name="" id="">
+                                    <input type="radio" name="book" id="">
                                     <label for="">كتاب مطبوع</label>
                                     <img src="assets/icons/Question.png" alt="">
                                 </div>
@@ -698,6 +697,7 @@
     <!-- End Gallary Viewer PopUp -->
 
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/gallary.js"></script>
 </body>
 
 </html>

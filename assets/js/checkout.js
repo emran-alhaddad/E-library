@@ -158,7 +158,7 @@ function showTab(n) {
     fixStepIndicator(n)
 }
 
-function nextPrev(n) {
+function nextPrevCheckout(n) {
 
     var x = document.getElementsByClassName("tab");
     if (n == -1) {
@@ -171,6 +171,7 @@ function nextPrev(n) {
     x[currentTab].style.display = "none";
     currentTab = currentTab + n;
     if (currentTab >= x.length) {
+        localStorage.clear();
         document.getElementById("checkoutForm").submit();
         return false;
     }

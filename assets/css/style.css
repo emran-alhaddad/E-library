@@ -446,10 +446,12 @@ footer .second img {
 .subMenue ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .subMenue ul li {
     margin-left: 15px;
+    list-style-type: none;
 }
 
 .subMenue ul li a {

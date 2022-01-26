@@ -110,20 +110,9 @@ const AddProduct = () => {
 
 
 
-// Gallary Show Section 
 
-const callImage = image => {
 
-    // document.getElementById("imageView").setAttribute("src", image.getAttribute("src"));
 
-    document.getElementById("Gallary").innerHTML = "<div class='card'>" +
-        image.parentNode.parentNode.innerHTML.replaceAll("boxImage", "boxImage2") + "</div>";
-    showModule('popUP');
-}
-
-const switchImage = (image, id) => {
-    document.getElementById(id).setAttribute("src", image.getAttribute("src"));
-}
 
 
 // Show Shopping Items in Shopping Bag
