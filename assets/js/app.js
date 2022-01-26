@@ -1,11 +1,8 @@
 document.body.setAttribute("onload", "init();");
 
-const showModule = id => {
-    document.getElementById(id).style = "transform: scale(1)";
-}
-const hideModule = id => {
-    document.getElementById(id).style = "transform: scale(0)";
-}
+const showModule = id => document.getElementById(id).style = "transform: scale(1)";
+const hideModule = id => document.getElementById(id).style = "transform: scale(0)";
+
 
 
 const LastOffers = (date, id) => {
@@ -87,7 +84,11 @@ function init() {
         });
     }
     AddProduct();
-    showCardProducts();
+
+    if (location.href.includes('shopBag')) {
+        showCardProducts();
+    }
+
 }
 
 const AddProduct = () => {
@@ -129,10 +130,10 @@ const switchImage = (image, id) => {
 
 const showCardProducts = () => {
     document.getElementById('noBagItems').innerText = "(" + localStorage.length + " منتجات)";
+    var totalPrice = 0;
+    document.getElementById('itemsCards').innerHTML = "";
     if (localStorage.length > 0) {
         document.getElementById('noBagItems').innerText = "(" + localStorage.length + " منتجات)";
-        document.getElementById('itemsCards').innerHTML = "";
-        var totalPrice = 0;
 
         for (let index = 0; index < localStorage.length; index++) {
             let Product = localStorage.getItem(localStorage.key(index)).split(',');
@@ -168,19 +169,19 @@ const showCardProducts = () => {
                 '</ul>' +
                 '</div>' +
                 '</div>';
-            document.getElementById('itemsCards').innerHTML = document.getElementById('itemsCards').innerHTML + item;
+            document.getElementById('itemsCards').innerHTML =
+                document.getElementById('itemsCards').innerHTML + item;
 
         }
+    } else
+        document.getElementById('itemsCards').innerHTML = "<h1 style='color:red'>السلة فارغة</h1>";
 
-
-        document.getElementById('totalPrice').innerHTML = totalPrice + "<sub>ر.س.</sub>";
-        document.getElementById('allTotalPrices').innerHTML = totalPrice + "<sub class='red'>ر.س.</sub>";
-    }
+    document.getElementById('totalPrice').innerHTML = totalPrice + "<sub>ر.س.</sub>";
+    document.getElementById('allTotalPrices').innerHTML = totalPrice + "<sub class='red'>ر.س.</sub>";
 }
 
 const deleteProduct = id => {
-    alert(id);
     document.getElementById(id).remove();
     localStorage.removeItem(id);
-    noProducts--;
+    location.reload();
 }

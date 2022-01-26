@@ -99,16 +99,34 @@ header nav ul li:hover {
 .search_logo {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #fffbfbeb;
+    z-index: 999;
+    column-gap: 1%;
+    padding-top: 20px;
+}
+
+.search_logo .logo {
+    width: 20%;
+}
+
+.search_logo .logo img {
+    width: 100%;
 }
 
 .search_logo .searchBox {
-    width: 75%;
+    width: 60%;
     position: relative;
     height: 40px;
+}
+
+.search_logo .bag {
+    width: 5%;
 }
 
 .searchBox input[type=text] {
@@ -121,6 +139,7 @@ header nav ul li:hover {
     padding: 5px;
     height: 100%;
     background-color: #e5e9f2;
+    border: 0;
 }
 
 .searchBox input[type=submit] {
@@ -172,7 +191,7 @@ header nav ul li:hover {
 /* Body Styling Section  */
 
 section.body {
-    margin: 20px 0;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
 }

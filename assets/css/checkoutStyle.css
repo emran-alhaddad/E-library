@@ -21,7 +21,7 @@ input {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-    border-left: 5px solid var(--border-focused-false);
+    border-inline-start: 5px solid var(--border-focused-false);
 }
 
 button {
@@ -43,6 +43,18 @@ button:hover {
 
 #prevBtn {
     background-color: darkred;
+    background-image: url(../icons/prev.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    font-size: 1rem;
+}
+
+#nextBtn {
+    background-image: url(../icons/next.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    visibility: hidden;
+    font-size: 1rem;
 }
 
 #prevBtn:hover {
@@ -114,11 +126,16 @@ button:hover {
     justify-content: space-between;
 }
 
-.controls.both {
-    justify-content: flex-end;
-}
+.controls.both {}
 
 .tab img {
-    width: 50%;
-    margin-left: 25%;
+    width: 100%;
+}
+
+#lastTab {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }

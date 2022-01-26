@@ -125,55 +125,56 @@
 
                 <div class="tab">
                     <h1>
-                        User Information:
+                        معلومات المستخدم
                     </h1>
 
-                    <label for="firstName">First-Name</label>
-                    <input class="" type="text" onkeyup="validateName(this);" id="firstName" name="firstName" placeholder="Your First Name..">
+                    <label for="firstName">الأسم الأول</label>
+                    <input class="" type="text" onkeyup="validateName(this);" id="firstName" name="firstName" placeholder="إسمك الرباعي">
 
-                    <label for="lastName">Last-Name</label>
-                    <input class="input" type="text" onkeyup="validateName(this);" id="lastName" name="lastName" placeholder="Your Last Name..">
+                    <label for="lastName">الأسم الأخير</label>
+                    <input class="input" type="text" onkeyup="validateName(this);" id="lastName" name="lastName" placeholder="اللقب">
 
-                    <label for="email">Email</label>
+                    <label for="email">البريد الإلكتروني</label>
                     <input class="input" type="email" onkeyup="validateEmail(this);" id="email" name="email" placeholder="example@gmail.com">
 
-                    <label for="Phone">Phone</label>
-                    <input class="input" type="tel" onkeyup="validatePhone(this);" id="Phone" name="Phone" placeholder="777xxxxxx">
+                    <label for="Phone">الهاتف</label>
+                    <input class="input" type="tel" onkeyup="validatePhone(this);" id="Phone" name="Phone" placeholder="777------">
 
                 </div>
 
                 <div class="tab">
                     <h1>
-                        Payment Information:
+                        معلومات الدفع
                     </h1>
 
-                    <label for="cardName">Card-Name</label>
-                    <input class="input" type="text" onkeyup="validateCardName(this);" id="cardName" name="cardName" placeholder="Card Name..">
+                    <label for="cardName">إسم البطاقة</label>
+                    <input class="input" type="text" onkeyup="validateCardName(this);" id="cardName" name="cardName" placeholder="اسم البطاقة">
 
-                    <label for="cardNumber">Card-Number</label>
-                    <input class="input" type="number" onkeyup="validateCardNumber(this);" id="cardNumber" name="cardNumber" placeholder="Your Card Number..">
+                    <label for="cardNumber">رقم البطاقة</label>
+                    <input class="input" type="number" onkeyup="validateCardNumber(this);" id="cardNumber" name="cardNumber" placeholder="رقم البطاقة">
 
                 </div>
 
                 <div class="tab">
                     <h1>
-                        Confirm Payment:
+                        تأكيد الدفع
                     </h1>
 
-                    <label for="Address">Address</label>
-                    <input class="" type="text" onkeyup="validateAddress(this);" id="Address" name="Address" placeholder="Address..">
+                    <label for="Address">العنوان</label>
+                    <input class="" type="text" onkeyup="validateAddress(this);" id="Address" name="Address" placeholder="العنوان">
 
-                    <label for="City">City</label>
-                    <input class="input" type="text" onkeyup="validateCity(this);" id="City" name="City" placeholder="City..">
+                    <label for="City">المدينة</label>
+                    <input class="input" type="text" onkeyup="validateCity(this);" id="City" name="City" placeholder="المدينة">
 
                 </div>
 
-                <div class="tab">
+                <div class="tab" id="lastTab">
                     <h1>
-                        Payment State:
+                        حالة الدفع:
                     </h1>
 
                     <img src="assets/images/Done.gif" alt="">
+                    <h5>جاهز للدفع</h5>
                 </div>
 
                 <div style="text-align:center;margin-top:40px;">
@@ -182,9 +183,9 @@
                     <span class="step"></span>
                     <span class="step"></span>
                 </div>
-                <div id="myControls" class="controls both">
-                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                <div id="myControls" class="controls">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">السابق</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">التالي</button>
                 </div>
 
 

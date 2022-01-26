@@ -11,6 +11,7 @@
     overflow-y: auto;
     transform: scale(0);
     transition: 0.5s;
+    z-index: 9999;
 }
 
 #sign-in form,
@@ -23,6 +24,10 @@
     background-color: white;
     text-align: center;
     direction: rtl;
+}
+
+#sign-up form {
+    width: 45%;
 }
 
 #sign-in input,
@@ -94,20 +99,21 @@
     background-color: #ffffff;
     color: #333;
     text-decoration: none;
-    box-shadow: 0 0 10px;
-    width: 50%;
+    box-shadow: 0 0 1px;
+    width: -webkit-fill-available;
     margin-top: 10px;
+    text-align: center;
+    word-spacing: 2px;
 }
 
 #createAccountBtn:hover {
-    padding: 17px;
-    box-shadow: 0 0 20px;
+    box-shadow: 0 0 2px red;
 }
 
 .close {
     position: absolute;
-    right: 35px;
-    top: 15px;
+    right: 1%;
+    top: 1%;
     font-size: 40px;
     font-weight: bold;
     color: #f1f1f1;
@@ -179,4 +185,22 @@
     text-decoration: none;
     color: #000;
     font-weight: bold;
+}
+
+@media (max-width:700px) {
+    #sign-in form,
+    #sign-up form {
+        width: auto;
+    }
+    #sign-in input,
+    #sign-up :is(input, select),
+    #createAccountBtn {
+        font-size: 2em;
+    }
+    #sign-up {
+        display: block;
+    }
+    #sign-up form {
+        margin: 0;
+    }
 }

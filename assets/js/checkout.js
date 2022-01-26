@@ -1,10 +1,15 @@
+let isValidTab1 = false;
+let isValidTab2 = false;
+let isValidTab3 = false;
+
+
 const disapleAll = () => {
     var elements = document.getElementsByClassName("input");
     for (const item of elements) {
         item.disabled = true;
     }
 
-    document.getElementById("nextBtn").style.display = "none";
+    document.getElementById("nextBtn").style.visibility = "hidden";
 }
 
 const disapleAllExcept = name => {
@@ -14,7 +19,8 @@ const disapleAllExcept = name => {
             item.disabled = true;
     }
 
-    document.getElementById("nextBtn").style.display = "none";
+    document.getElementById("nextBtn").style.visibility = "hidden";
+
 }
 
 const enableItem = id => document.getElementById(id).disabled = false;
@@ -26,7 +32,7 @@ const enableItems = ids => {
 }
 
 const validateName = name => {
-    if (name.value.length > 3 && name.value.length < 10) {
+    if (name.value.length > 3 && name.value.length < 30) {
         name.classList.add('inputSuccessLightThem');
         if (name.id != "lastName")
             document.getElementById('lastName').disabled = false;
@@ -35,6 +41,8 @@ const validateName = name => {
     } else {
         name.classList.remove('inputSuccessLightThem');
         disapleAllExcept(name);
+        isValidTab1 = false;
+
     }
 }
 
@@ -52,6 +60,7 @@ const validateEmail = (email) => {
         email.classList.remove('inputSuccessLightThem');
         disapleAllExcept(email);
         enableItems(['firstName', 'lastName']);
+        isValidTab1 = false;
     }
 }
 
@@ -60,12 +69,14 @@ const validatePhone = phone => {
     if (phone.value.startsWith('777') && phone.value.length == 9) {
         phone.classList.add('inputSuccessLightThem');
         document.getElementById('cardName').disabled = false;
-        document.getElementById("nextBtn").style.display = "block";
+        document.getElementById("nextBtn").style.visibility = "visible";
         document.getElementsByClassName("step")[currentTab].className += " finish";
+        isValidTab1 = true;
     } else {
         phone.classList.remove('inputSuccessLightThem');
         disapleAllExcept(phone);
         enableItems(['firstName', 'lastName', 'email']);
+        isValidTab1 = false;
     }
 }
 
@@ -77,20 +88,23 @@ const validateCardName = name => {
         name.classList.remove('inputSuccessLightThem');
         disapleAllExcept(name);
         enableItems(['firstName', 'lastName', 'email', 'Phone']);
+        isValidTab2 = false;
     }
 }
 
 
 const validateCardNumber = number => {
-    if (number.value.length > 5) {
+    if (number.value.match(/[0-9]{5,10}/)) {
         number.classList.add('inputSuccessLightThem');
         document.getElementById('Address').disabled = false;
-        document.getElementById("nextBtn").style.display = "block";
+        document.getElementById("nextBtn").style.visibility = "visible";
         document.getElementsByClassName("step")[currentTab].className += " finish";
+        isValidTab2 = true;
     } else {
         number.classList.remove('inputSuccessLightThem');
         disapleAllExcept(number);
         enableItems(['firstName', 'lastName', 'email', 'Phone', 'cardName']);
+        isValidTab2 = false;
     }
 }
 
@@ -103,18 +117,21 @@ const validateAddress = address => {
         address.classList.remove('inputSuccessLightThem');
         disapleAllExcept(address);
         enableItems(['firstName', 'lastName', 'email', 'Phone', 'cardName', 'cardNumber']);
+        isValidTab3 = false;
     }
 }
 
 const validateCity = city => {
     if (city.value.length > 3) {
         city.classList.add('inputSuccessLightThem');
-        document.getElementById("nextBtn").style.display = "block";
+        document.getElementById("nextBtn").style.visibility = "visible";
         document.getElementsByClassName("step")[currentTab].className += " finish";
+        isValidTab3 = true;
     } else {
         city.classList.remove('inputSuccessLightThem');
         disapleAllExcept(city);
         enableItems(['firstName', 'lastName', 'email', 'Phone', 'cardName', 'cardNumber', 'Address']);
+        isValidTab3 = false;
     }
 }
 
@@ -127,15 +144,16 @@ function showTab(n) {
     x[n].style.display = "block";
 
     if (n == 0) {
-        document.getElementById("prevBtn").style.display = "none";
+        document.getElementById("prevBtn").style.visibility = "hidden";
     } else {
-        document.getElementById("prevBtn").style.display = "inline";
+        document.getElementById("prevBtn").style.visibility = "visible";
     }
     if (n == (x.length - 1)) {
-        document.getElementById("nextBtn").innerHTML = "Submit";
-        document.getElementById("nextBtn").style.display = "block";
+        document.getElementById("nextBtn").innerHTML = "تأكيد الدفع";
+        document.getElementById("nextBtn").style.visibility = "visible";
+        document.getElementById("lastTab").style.display = "flex";
     } else {
-        document.getElementById("nextBtn").innerHTML = "Next";
+        document.getElementById("nextBtn").innerHTML = "التالي";
     }
     fixStepIndicator(n)
 }
@@ -145,18 +163,39 @@ function nextPrev(n) {
     var x = document.getElementsByClassName("tab");
     if (n == -1) {
         document.getElementsByClassName('containerForm')[0].style.transform = "rotate(" + (currentTab - 1) * 360 + "deg)";
-        document.getElementById("nextBtn").style.display = "block";
-        document.getElementById("myControls").classList.add("both");
+        document.getElementById("nextBtn").style.visibility = "visible";
     } else {
         document.getElementsByClassName('containerForm')[0].style.transform = "rotate(" + (currentTab + 1) * 360 + "deg)";
-        document.getElementById("nextBtn").style.display = "none";
-        document.getElementById("myControls").classList.remove("both");
+        document.getElementById("nextBtn").style.visibility = "hidden";
     }
     x[currentTab].style.display = "none";
     currentTab = currentTab + n;
     if (currentTab >= x.length) {
         document.getElementById("checkoutForm").submit();
         return false;
+    }
+
+    switch (currentTab) {
+        case 0:
+            if (isValidTab1)
+                document.getElementById("nextBtn").style.visibility = "visible";
+            else
+                document.getElementById("nextBtn").style.visibility = "hidden";
+            break;
+
+        case 1:
+            if (isValidTab2)
+                document.getElementById("nextBtn").style.visibility = "visible";
+            else
+                document.getElementById("nextBtn").style.visibility = "hidden";
+            break;
+
+        case 2:
+            if (isValidTab3)
+                document.getElementById("nextBtn").style.visibility = "visible";
+            else
+                document.getElementById("nextBtn").style.visibility = "hidden";
+            break;
     }
 
     showTab(currentTab);
@@ -170,3 +209,6 @@ function fixStepIndicator(n) {
     }
     x[n].className += " active";
 }
+
+
+disapleAll();
