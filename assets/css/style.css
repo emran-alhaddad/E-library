@@ -218,6 +218,7 @@ section.body {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    position: relative;
 }
 
 .simpleCard {
@@ -630,4 +631,25 @@ footer .second img {
     .categories2 {
         flex-direction: column;
     }
+}
+
+.slider::after,
+.slider::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #33333396;
+}
+
+.slider::after {
+    right: -1rem;
+    content: "❮";
+}
+
+.slider::before {
+    left: -1rem;
+    content: "❯";
 }

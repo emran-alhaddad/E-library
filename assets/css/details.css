@@ -305,6 +305,7 @@
     background-color: rgba(3, 3, 3, 0.6);
     transition: all ease-in-out 0.5s;
     transform: scale(0);
+    z-index: 999;
 }
 
 #Gallary {

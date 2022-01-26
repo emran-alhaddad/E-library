@@ -55,7 +55,9 @@
 
         <section class="search_logo">
             <div class="logo">
-                <img src="assets/icons/svgexport-48.svg" alt="Logo" srcset="">
+                <a href="index.html">
+                    <img src="assets/icons/svgexport-48.svg" alt="Logo">
+                </a>
             </div>
             <form action="" class="searchBox">
                 <input type="text" name="seach" id="search" onkeyup="search_books();">
@@ -63,103 +65,82 @@
             </form>
             <div class="bag">
                 <div style="position:relative ;">
-                    <span id="BagCounter">5</span>
+                    <span id="BagCounter"></span>
                     <a href="shopBag.html">
                         <img src="assets/icons/svgexport-51.svg" id="BagImage" alt="">
                     </a>
                 </div>
             </div>
         </section>
-        <!-- Start Carosal  -->
-        <section class="carousel hide" aria-label="Gallery">
-            <ol class="carousel__viewport">
-                <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                    </div>
-                    <img src="assets/images/banner1.jpg" alt="">
-                    <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
-                    <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
 
-                </li>
-                <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                    </div>
-                    <img src="assets/images/banner2.jpg" alt="">
-                    <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-                </li>
-                <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                    </div>
-                    <img src="assets/images/banner3.jpg" alt="">
-                    <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
-                </li>
-                <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-                    <div class="carousel__snapper">
-                    </div>
-                    <img src="assets/images/banner4.jpg" alt="">
-                    <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
-                </li>
-            </ol>
-            <aside class="carousel__navigation">
-                <ol class="carousel__navigation-list">
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
-                    </li>
-                </ol>
-            </aside>
+        <!-- Start Carosal  -->
+        <section class="carousel hide">
+            <div class="carouselSlider animation">
+                <img src="assets/images/banner1.jpg" alt="">
+            </div>
+            <div class="carouselSlider animation">
+                <img src="assets/images/banner2.jpg" alt="">
+            </div>
+            <div class="carouselSlider animation">
+                <img src="assets/images/banner3.jpg" alt="">
+            </div>
+            <div class="carouselSlider animation">
+                <img src="assets/images/banner4.jpg" alt="">
+            </div>
+
+            <!-- Navigation arrows -->
+            <a class="carouselLeftBtn" onclick="nextPrev(-1)">❯</a>
+            <a class="carouselRightBtn" onclick="nextPrev(1)">❮</a>
+
+            <!-- Navigation Icons -->
+            <div class="carouselIcons">
+                <span class="carouselIcon"></span>
+                <span class="carouselIcon"></span>
+                <span class="carouselIcon"></span>
+                <span class="carouselIcon"></span>
+            </div>
+
         </section>
         <!-- End Carosal  -->
 
         <!-- Categories Sction -->
         <section class=" categories hide">
             <h1> تصفح حسب القسم</h1>
-            <div class="container">
-                <div class="simpleCard">
+            <div class="container slider">
+                <a class="simpleCard" href="#sec1">
                     <img src="assets/icons/svgexport-45.svg" alt="" srcset="">
                     <h2>دين</h2>
-                </div>
+                </a>
 
-                <div class="simpleCard">
+                <a href="#sec2" class="simpleCard">
                     <img src="assets/icons/svgexport-41.svg" alt="" srcset="">
                     <h2>تاريخ</h2>
-                </div>
+                </a>
 
-                <div class="simpleCard">
+                <a href="#sec6" class="simpleCard">
                     <img src="assets/icons/svgexport-39.svg" alt="" srcset="">
                     <h2>روايات</h2>
-                </div>
+                </a>
 
-                <div class="simpleCard">
+                <a href="#sec3" class="simpleCard">
                     <img src="assets/icons/svgexport-42.svg" alt="" srcset="">
                     <h2>سياسة</h2>
-                </div>
+                </a>
 
-                <div class="simpleCard">
+                <a href="#sec4" class="simpleCard">
                     <img src="assets/icons/svgexport-44.svg" alt="" srcset="">
                     <h2>اقتصاد</h2>
-                </div>
+                </a>
 
-                <div class="simpleCard">
+                <a href="#sec5" class="simpleCard">
                     <img src="assets/icons/svgexport-46.svg" alt="" srcset="">
                     <h2>طبخ</h2>
-                </div>
+                </a>
 
-                <div class="simpleCard">
+                <a href="#" class="simpleCard">
                     <img src="assets/icons/svgexport-47.svg" alt="" srcset="">
                     <h2>تربية</h2>
-                </div>
+                </a>
             </div>
         </section>
 
@@ -177,17 +158,17 @@
                 <h1> العروض الحالية</h1>
                 <a href="category.html">عرض الكل</a>
             </div>
-            <div class="container">
+            <div class="container slider">
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book1.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">كبرياء وهوى (كتاب إلكتروني)</p>
                         <h2>17.99 <sub>رس</sub></h2>
                         <h5 id="lastOffers1"></h5>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -196,15 +177,15 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book2.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">خلف قوتي ضعف يحبك (كتاب إلكتروني)</p>
                         <h2>24.99 <sub>رس</sub></h2>
                         <h5 id="lastOffers2"></h5>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -213,15 +194,15 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book3.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">كتالوج الحب (كتاب إلكتروني)</p>
                         <h2>19.99 <sub>رس</sub></h2>
                         <h5 id="lastOffers3"></h5>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -230,15 +211,15 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book4.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">إلى الذي أسرني حبه (كتاب إلكتروني)</p>
                         <h2>19.99 <sub>رس</sub></h2>
                         <h5 id="lastOffers4"></h5>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -247,15 +228,15 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book5.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt=""> كتاب إلكتروني</h1>
                         <p class="BoookTitle">زواج غير متوقع (كتاب إلكتروني)</p>
                         <h2>3.99 <sub>رس</sub></h2>
                         <h5 id="lastOffers5"></h5>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -265,20 +246,20 @@
 
             </div>
 
-            <div class="oneLineDiv">
+            <div id="sec1" class="oneLineDiv">
                 <h1> الكتب الدينية</h1>
                 <a href="category.html">عرض الكل</a>
             </div>
-            <div class="container">
+            <div class="container slider">
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book1.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">كبرياء وهوى (كتاب إلكتروني)</p>
                         <h2>17.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -287,14 +268,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book2.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">خلف قوتي ضعف يحبك (كتاب إلكتروني)</p>
                         <h2>24.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -303,14 +284,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book3.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">كتالوج الحب (كتاب إلكتروني)</p>
                         <h2>19.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -319,14 +300,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book4.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">إلى الذي أسرني حبه (كتاب إلكتروني)</p>
                         <h2>19.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -335,14 +316,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book5.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt=""> كتاب إلكتروني</h1>
                         <p class="BoookTitle">زواج غير متوقع (كتاب إلكتروني)</p>
                         <h2>3.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -356,16 +337,16 @@
                 <h1> الكتب التاريخية</h1>
                 <a href="category.html">عرض الكل</a>
             </div>
-            <div class="container">
+            <div class="container slider">
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book1.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">كبرياء وهوى (كتاب إلكتروني)</p>
                         <h2>17.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -374,14 +355,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book2.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">خلف قوتي ضعف يحبك (كتاب إلكتروني)</p>
                         <h2>24.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -390,14 +371,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book3.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">كتالوج الحب (كتاب إلكتروني)</p>
                         <h2>19.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -406,14 +387,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book4.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">إلى الذي أسرني حبه (كتاب إلكتروني)</p>
                         <h2>19.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -422,14 +403,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book5.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt=""> كتاب إلكتروني</h1>
                         <p class="BoookTitle">زواج غير متوقع (كتاب إلكتروني)</p>
                         <h2>3.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -439,20 +420,20 @@
 
             </div>
 
-            <div class="oneLineDiv">
+            <div id="sec2" class="oneLineDiv">
                 <h1> السايسة</h1>
                 <a href="category.html">عرض الكل</a>
             </div>
-            <div class="container">
+            <div class="container slider">
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book1.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">كبرياء وهوى (كتاب إلكتروني)</p>
                         <h2>17.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -461,14 +442,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book2.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">خلف قوتي ضعف يحبك (كتاب إلكتروني)</p>
                         <h2>24.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -477,14 +458,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book3.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">كتالوج الحب (كتاب إلكتروني)</p>
                         <h2>19.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -493,14 +474,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book4.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">إلى الذي أسرني حبه (كتاب إلكتروني)</p>
                         <h2>19.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -509,14 +490,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book5.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt=""> كتاب إلكتروني</h1>
                         <p class="BoookTitle">زواج غير متوقع (كتاب إلكتروني)</p>
                         <h2>3.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -527,20 +508,20 @@
             </div>
 
 
-            <div class="oneLineDiv">
+            <div id="sec3" class="oneLineDiv">
                 <h1> الأقتصاد</h1>
                 <a href="category.html">عرض الكل</a>
             </div>
-            <div class="container">
+            <div class="container slider">
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book1.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">كبرياء وهوى (كتاب إلكتروني)</p>
                         <h2>17.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -549,14 +530,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book2.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">خلف قوتي ضعف يحبك (كتاب إلكتروني)</p>
                         <h2>24.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -565,14 +546,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book3.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">كتالوج الحب (كتاب إلكتروني)</p>
                         <h2>19.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -581,14 +562,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book4.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">إلى الذي أسرني حبه (كتاب إلكتروني)</p>
                         <h2>19.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -597,14 +578,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book5.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt=""> كتاب إلكتروني</h1>
                         <p class="BoookTitle">زواج غير متوقع (كتاب إلكتروني)</p>
                         <h2>3.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -615,20 +596,20 @@
             </div>
 
 
-            <div class="oneLineDiv">
+            <div id="sec4" class="oneLineDiv">
                 <h1> الطبخ</h1>
                 <a href="category.html">عرض الكل</a>
             </div>
-            <div class="container">
+            <div class="container slider">
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book1.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">كبرياء وهوى (كتاب إلكتروني)</p>
                         <h2>17.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -637,14 +618,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book2.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">خلف قوتي ضعف يحبك (كتاب إلكتروني)</p>
                         <h2>24.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -653,14 +634,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book3.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">كتالوج الحب (كتاب إلكتروني)</p>
                         <h2>19.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -669,14 +650,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book4.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">إلى الذي أسرني حبه (كتاب إلكتروني)</p>
                         <h2>19.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -685,38 +666,37 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book5.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt=""> كتاب إلكتروني</h1>
                         <p class="BoookTitle">زواج غير متوقع (كتاب إلكتروني)</p>
                         <h2>3.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
                         <img src="assets/icons/svgexport-54.svg" alt="star" srcset="">
                     </div>
                 </div>
-
             </div>
 
 
-            <div class="oneLineDiv">
+            <div id="sec5" class="oneLineDiv">
                 <h1> أفضل الروايات الرومانسية</h1>
                 <a href="category.html">عرض الكل</a>
             </div>
-            <div class="container">
+            <div class="container slider">
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book1.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">كبرياء وهوى (كتاب إلكتروني)</p>
                         <h2>17.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -725,14 +705,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book2.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">خلف قوتي ضعف يحبك (كتاب إلكتروني)</p>
                         <h2>24.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -741,14 +721,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book3.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">كتالوج الحب (كتاب إلكتروني)</p>
                         <h2>19.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -757,14 +737,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book4.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt="">كتاب إلكتروني</h1>
                         <p class="BoookTitle">إلى الذي أسرني حبه (كتاب إلكتروني)</p>
                         <h2>19.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">
@@ -773,14 +753,14 @@
                 </div>
 
                 <div class="card">
-                    <div class="header">
+                    <a href="details.html" class="header">
                         <img src="assets/images/Books/Book5.jpg" alt="" srcset="">
-                    </div>
-                    <div class="body">
+                    </a>
+                    <a href="details.html" class="body">
                         <h1><img src="assets/images/bookIcon.png" alt=""> كتاب إلكتروني</h1>
                         <p class="BoookTitle">زواج غير متوقع (كتاب إلكتروني)</p>
                         <h2>3.99 <sub>رس</sub></h2>
-                    </div>
+                    </a>
                     <div class="footer">
                         <img src="assets/icons/svgexport-55.svg" alt="transfere" srcset="">
                         <img class="origin" src="assets/icons/cart-2.svg" alt="shopbag" srcset="">

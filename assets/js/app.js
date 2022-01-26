@@ -44,7 +44,7 @@ function search_books() {
     if (input.length > 0)
         hide_Show_Others('none');
     else
-        hide_Show_Others('initial');
+        hide_Show_Others('inherit');
 
     for (i = 0; i < x.length; i++) {
         if (!x[i].innerHTML.toLowerCase().includes(input)) {
@@ -227,3 +227,46 @@ const toggleMenue = () => {
     else
         menuNav.classList.add("naving2");
 }
+
+
+// Carousel Section
+
+var currentSlide = 0;
+
+const nextPrev = direction => {
+    if (direction == 1) currentSlide++;
+    else if (direction == -1) currentSlide--;
+
+    let slides = document.getElementsByClassName('carouselSlider');
+    let icons = document.getElementsByClassName('carouselIcon');
+
+    for (const slide of slides) slide.style = "flex:0";
+    for (const icon of icons) icon.classList.remove("activeCarousel");
+
+    currentSlide =
+        currentSlide > (slides.length - 1) ? 0 :
+        currentSlide < 0 ? slides.length - 1 : currentSlide;
+
+    slides[currentSlide].style = "flex:1";
+    icons[currentSlide].classList.add("activeCarousel");
+
+
+}
+
+const showSlides = () => {
+
+    let slides = document.getElementsByClassName('carouselSlider');
+    let icons = document.getElementsByClassName('carouselIcon');
+
+    for (const slide of slides) slide.style = "flex:0";
+    for (const icon of icons) icon.classList.remove("activeCarousel");
+
+    slides[currentSlide].style = "flex:1";
+    icons[currentSlide].classList.add("activeCarousel");
+
+    currentSlide = currentSlide >= (slides.length - 1) ? 0 : currentSlide + 1;
+    setTimeout(showSlides, 5000);
+
+}
+
+showSlides(0);
