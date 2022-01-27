@@ -683,5 +683,5 @@ footer .second img {
     box-shadow: 0 0 5px #333;
     padding: 10px;
     border-radius: 5px;
-    visibility: hidden;
+    display: none;
 }

@@ -16,11 +16,11 @@ const LastOffers = (date, id) => {
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         document.getElementById(id).innerHTML = "الوقت المتبقي للخصم: " + days + "d " + hours + ":" +
             minutes + ":" + seconds + " ";
-        document.getElementById(id).style = "color:green; visibility:visible; text-decoration: none;";
+        document.getElementById(id).style = "color:green; display:block; text-decoration: none;";
         if (distance < 0) {
             clearInterval(x);
             document.getElementById(id).innerHTML = "إنتهت مدة الخصم";
-            document.getElementById(id).style = "color:red; visibility:visible; text-decoration: line-through;";
+            document.getElementById(id).style = "color:red; display:block; text-decoration: line-through;";
         }
     }, 1000);
 }
