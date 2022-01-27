@@ -638,6 +638,9 @@ footer .second img {
     .categories2 {
         flex-direction: column;
     }
+    header nav ul li {
+        font-size: 4vw;
+    }
 }
 
 .slider::after,
