@@ -1,5 +1,6 @@
 /* Initial The Bage */
 
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
     -ms-overflow-style: none;
     font-family: Tajawal, sans-serif;
@@ -72,6 +73,7 @@ header nav ul li {
     padding: 10px;
     transition: 1s;
     flex: 1;
+    font-size: 0.8vw;
 }
 
 header nav ul li img {
@@ -293,6 +295,12 @@ section.body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
+    font-size: 18px;
+}
+
+.card .body span {
+    color: #42526e;
 }
 
 .card .body h1 img {
@@ -328,9 +336,6 @@ section.body {
 }
 
 .card .footer .origin {
-    background-color: red;
-    border-radius: 50%;
-    padding: 5px;
     cursor: pointer;
 }
 
@@ -654,4 +659,14 @@ footer .second img {
 .slider::before {
     left: -1rem;
     content: "❯";
+}
+
+.rating {
+    margin-top: 4px;
+}
+
+.BoookTitle {
+    font-size: 14px;
+    font-weight: 500;
+    color: #42526e;
 }

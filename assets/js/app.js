@@ -88,6 +88,9 @@ function init() {
     if (location.href.includes('shopBag')) {
         showCardProducts();
     }
+    if (location.href.includes('index')) {
+        allCounters();
+    }
 
 }
 
