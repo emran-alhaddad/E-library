@@ -203,3 +203,11 @@ section.body {
     padding-right: 20px;
     margin: 0;
 }
+
+.free {
+    color: green;
+}
+
+#allTotalPrices {
+    font-size: 30px;
+}
