@@ -76,8 +76,8 @@ function init() {
 
         btn.addEventListener("click", function() {
             let image = this.parentNode.parentNode.children[0].children[0].src;
-            let title = this.parentNode.parentNode.children[1].children[1].innerHTML;
-            let price = this.parentNode.parentNode.children[1].children[2].innerHTML;
+            let title = this.parentNode.parentNode.children[1].children[2].innerHTML;
+            let price = this.parentNode.parentNode.children[1].children[3].innerHTML;
             localStorage.setItem('Product' + (localStorage.length + 1), [image, title, price]);
             alert("تم إضافة المنتج إلى السلة");
             AddProduct();
@@ -107,16 +107,6 @@ const AddProduct = () => {
         document.getElementById('BagImage').src = "assets/icons/svgexport-51.svg";
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 // Show Shopping Items in Shopping Bag
