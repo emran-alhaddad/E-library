@@ -641,6 +641,10 @@ footer .second img {
     header nav ul li {
         font-size: 4vw;
     }
+    .slider::after,
+    .slider::before {
+        display: none;
+    }
 }
 
 .slider::after,

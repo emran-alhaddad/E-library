@@ -52,7 +52,7 @@ function search_books() {
             x[i].parentNode.parentNode.style.display = "none";
 
         } else {
-            document.getElementsByClassName('card')[i].style = "flex: auto;";
+            document.getElementsByClassName('card')[i].style = "flex: none;";
             x[i].parentNode.parentNode.style.display = "initial";
 
         }
