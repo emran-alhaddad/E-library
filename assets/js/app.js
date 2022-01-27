@@ -16,16 +16,17 @@ const LastOffers = (date, id) => {
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         document.getElementById(id).innerHTML = "الوقت المتبقي للخصم: " + days + "d " + hours + ":" +
             minutes + ":" + seconds + " ";
+        document.getElementById(id).style = "color:green; visibility:visible; text-decoration: none;";
         if (distance < 0) {
             clearInterval(x);
             document.getElementById(id).innerHTML = "إنتهت مدة الخصم";
-            document.getElementById(id).style = "color:red; text-decoration: line-through;";
+            document.getElementById(id).style = "color:red; visibility:visible; text-decoration: line-through;";
         }
     }, 1000);
 }
 
 const allCounters = () => {
-    LastOffers("Jan 22, 2022 21:47:55", "lastOffers1");
+    LastOffers("Jan 29, 2022 21:47:55", "lastOffers1");
     LastOffers("Jan 21, 2022 00:47:55", "lastOffers2");
     LastOffers("Jan 19, 2022 23:47:55", "lastOffers3");
     LastOffers("Jan 20, 2022 00:00:00", "lastOffers4");

@@ -677,3 +677,11 @@ footer .second img {
     font-weight: 500;
     color: #42526e;
 }
+
+.lastOfferText {
+    text-decoration: line-through;
+    box-shadow: 0 0 5px #333;
+    padding: 10px;
+    border-radius: 5px;
+    visibility: hidden;
+}
