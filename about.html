@@ -5,21 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
+    <title>Details</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/checkoutStyle.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/account-style.css">
+    <link rel="stylesheet" href="assets/css/details.css">
     <link rel="stylesheet" href="assets/css/carousel.css">
     <link id="pageStyle" rel="stylesheet" href="assets/css/arabicStyle.css">
-
 </head>
 
-<body onload="disapleAll();">
+<body>
 
     <!-- Start Header -->
     <header>
@@ -75,77 +74,38 @@
             </div>
         </section>
 
-        <div class="containerForm">
-            <form action="index.html" method="post" id="checkoutForm">
+        <!-- Start Carosal  -->
+        <section class="carousel hide">
+            <div class="carouselSlider animation">
+                <img src="assets/images/banner1.jpg" alt="">
+            </div>
+            <div class="carouselSlider animation">
+                <img src="assets/images/banner2.jpg" alt="">
+            </div>
+            <div class="carouselSlider animation">
+                <img src="assets/images/banner3.jpg" alt="">
+            </div>
+            <div class="carouselSlider animation">
+                <img src="assets/images/banner4.jpg" alt="">
+            </div>
 
-                <div class="tab">
-                    <h1>
-                        معلومات المستخدم
-                    </h1>
+            <!-- Navigation arrows -->
+            <a class="carouselLeftBtn" onclick="nextPrev(-1)">❯</a>
+            <a class="carouselRightBtn" onclick="nextPrev(1)">❮</a>
 
-                    <label for="firstName">الأسم الأول</label>
-                    <input class="" type="text" onkeyup="validateName(this);" id="firstName" name="firstName" placeholder="إسمك الرباعي">
+            <!-- Navigation Icons -->
+            <div class="carouselIcons">
+                <span class="carouselIcon"></span>
+                <span class="carouselIcon"></span>
+                <span class="carouselIcon"></span>
+                <span class="carouselIcon"></span>
+            </div>
 
-                    <label for="lastName">الأسم الأخير</label>
-                    <input class="input" type="text" onkeyup="validateName(this);" id="lastName" name="lastName" placeholder="اللقب">
-
-                    <label for="email">البريد الإلكتروني</label>
-                    <input class="input" type="email" onkeyup="validateEmail(this);" id="email" name="email" placeholder="example@gmail.com">
-
-                    <label for="Phone">الهاتف</label>
-                    <input class="input" type="tel" onkeyup="validatePhone(this);" id="Phone" name="Phone" placeholder="777------">
-
-                </div>
-
-                <div class="tab">
-                    <h1>
-                        معلومات الدفع
-                    </h1>
-
-                    <label for="cardName">إسم البطاقة</label>
-                    <input class="input" type="text" onkeyup="validateCardName(this);" id="cardName" name="cardName" placeholder="اسم البطاقة">
-
-                    <label for="cardNumber">رقم البطاقة</label>
-                    <input class="input" type="number" onkeyup="validateCardNumber(this);" id="cardNumber" name="cardNumber" placeholder="رقم البطاقة">
-
-                </div>
-
-                <div class="tab">
-                    <h1>
-                        تأكيد الدفع
-                    </h1>
-
-                    <label for="Address">العنوان</label>
-                    <input class="" type="text" onkeyup="validateAddress(this);" id="Address" name="Address" placeholder="العنوان">
-
-                    <label for="City">المدينة</label>
-                    <input class="input" type="text" onkeyup="validateCity(this);" id="City" name="City" placeholder="المدينة">
-
-                </div>
-
-                <div class="tab" id="lastTab">
-                    <h1>
-                        حالة الدفع:
-                    </h1>
-
-                    <img src="assets/images/Done.gif" alt="">
-                    <h5>جاهز للدفع</h5>
-                </div>
-
-                <div style="text-align:center;margin-top:40px;">
-                    <span class="step"></span>
-                    <span class="step"></span>
-                    <span class="step"></span>
-                    <span class="step"></span>
-                </div>
-                <div id="myControls" class="controls">
-                    <button type="button" id="prevBtn" onclick="nextPrevCheckout(-1)">السابق</button>
-                    <button type="button" id="nextBtn" onclick="nextPrevCheckout(1)">التالي</button>
-                </div>
+        </section>
+        <!-- End Carosal  -->
 
 
-            </form>
-        </div>
+
     </section>
     <!-- End Body Section  -->
 
@@ -337,9 +297,17 @@
 
     <!-- Finish Sign-up Pop Up -->
 
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/checkout.js"></script>
-</body>
+    <!-- Start Gallary Viewer PopUp -->
+    <div id="popUP">
+        <div class="header">
+            <h1 id="closeGallary" onclick="hideModule('popUP');">X</h1>
+        </div>
+        <div id="Gallary"></div>
+    </div>
+    <!-- End Gallary Viewer PopUp -->
 
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/gallary.js"></script>
+</body>
 
 </html>
